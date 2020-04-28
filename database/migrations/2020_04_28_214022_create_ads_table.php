@@ -21,6 +21,7 @@ class CreateAdsTable extends Migration
             $table->enum('period', ['Hora', 'Día', 'Semanal', 'Mensual']);
             $table->longText('description');
             $table->string('code');
+            $table->foreignId('profile_id');
             $table->timestamps();
         });
     }

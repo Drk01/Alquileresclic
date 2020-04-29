@@ -10,4 +10,9 @@ class Ad extends Model
     {
         return $this->belongsTo(Profile::class);
     }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class)->withTimestamps();
+    }
 }

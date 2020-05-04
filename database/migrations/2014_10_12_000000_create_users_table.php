@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->string('lastname');
             $table->string('mothersLastname');
-            $table->integer('role');
+            $table->integer('role')->default(0);
             $table->boolean('confianza');
             $table->timestamps();
         });

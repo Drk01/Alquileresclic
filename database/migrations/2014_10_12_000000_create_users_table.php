@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('mothersLastname');
             $table->integer('role')->default(0);
-            $table->boolean('confianza');
+            $table->boolean('confianza')->default(false);
             $table->timestamps();
         });
     }

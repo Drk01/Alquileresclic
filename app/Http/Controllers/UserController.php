@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -13,6 +14,7 @@ class UserController extends Controller
 
     public function getListForm()
     {
-        return view('panel.users.list');
+        $users = User::all();
+        return view('panel.users.list', compact('users'));
     }
 }

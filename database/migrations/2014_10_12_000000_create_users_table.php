@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('mothersLastname');
             $table->integer('role')->default(0);
             $table->boolean('confianza')->default(false);
+            $table->boolean('block')->default(false);
             $table->timestamps();
         });
     }

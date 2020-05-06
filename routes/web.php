@@ -19,4 +19,9 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'panel'], function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/users', 'UserController@getListForm')->name('users');
+});

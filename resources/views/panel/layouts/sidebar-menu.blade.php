@@ -36,6 +36,7 @@
                 </p>
             </a>
         </li>
+        @include('panel.layouts.nav-sections.logout')
     </ul>
 </nav>
 <!-- /.sidebar-menu -->

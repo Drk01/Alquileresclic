@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->integer('role')->default(0);
             $table->boolean('confianza')->default(false);
             $table->boolean('block')->default(false);
+            $table->string('api_token');
             $table->timestamps();
         });
     }

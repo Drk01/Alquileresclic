@@ -22,7 +22,9 @@ class UserController extends Controller
     public function userBlocker($id)
     {
         $user = User::find($id);
-        $user->block = !$user->block;
+        if ($user->role != 1) {
+            $user->block = !$user->block;
+        }
         $user->save();
     }
 }

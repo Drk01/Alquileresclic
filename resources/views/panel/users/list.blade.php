@@ -17,35 +17,19 @@
             </td>
             <td>
                 @if ($user->block)
-                <button
-                    class="btn btn-danger btn-sm"
-                    onclick="block({{ $user->id }})"
-                    id="block{{ $user->id }}"
-                >
+                <button class="btn btn-danger btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
                     Desbloquear
                 </button>
                 @else
-                <button
-                    class="btn btn-success btn-sm"
-                    onclick="block({{ $user->id }})"
-                    id="block{{ $user->id }}"
-                >
+                <button class="btn btn-success btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
                     Bloquear
                 </button>
                 @endif @switch($user->role) @case(0)
-                <button
-                    class="btn btn-primary btn-sm"
-                    id="role{{ $user->id }}"
-                    onclick="role({{ $user->id }})"
-                >
+                <button class="btn btn-primary btn-sm" id="role{{ $user->id }}" onclick="role({{ $user->id }})">
                     Hacer supervisor
                 </button>
                 @break @case(2)
-                <button
-                    class="btn btn-primary btn-sm"
-                    id="role{{ $user->id }}"
-                    onclick="role({{ $user->id }})"
-                >
+                <button class="btn btn-primary btn-sm" id="role{{ $user->id }}" onclick="role({{ $user->id }})">
                     Hacer usuario
                 </button>
                 @break @default
@@ -83,7 +67,7 @@
                     "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
                         "content"
                     ),
-                    _token: $('meta[name="authApiToken"]').attr("content")
+                    "_token": $('meta[name="authApiToken"]').attr("content")
                 }
             });
         };
@@ -96,7 +80,7 @@
                     "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
                         "content"
                     ),
-                    _token: $('meta[name="authApiToken"]').attr("content")
+                    "_token": $('meta[name="authApiToken"]').attr("content")
                 },
                 success(resp) {
                     if (

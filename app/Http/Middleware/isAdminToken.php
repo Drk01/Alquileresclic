@@ -15,6 +15,10 @@ class isAdminToken
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        $user = User::where('api_token', $request->header('_token'))->first();
+
+        if ($user->role == 1) {
+            return next($request);
+        }
     }
 }

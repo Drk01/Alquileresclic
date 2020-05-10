@@ -24,6 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             rel="stylesheet"
         />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <meta name="authApiToken" content="{{ auth()->user()->api_token }}" />
     </head>
 
     <body class="hold-transition sidebar-mini">

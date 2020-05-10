@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\User;
 use Closure;
 
 class isAdminYisSuperToken
@@ -15,6 +16,10 @@ class isAdminYisSuperToken
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        $user = User::where('api_token', $request->header('_token'))->first();
+
+        if ($user->role == 1 || $user->role == 2) {
+            return $next($request);
+        }
     }
 }

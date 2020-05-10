@@ -18,4 +18,11 @@ class UserController extends Controller
         $users = User::all();
         return view('panel.users.list', compact('users'));
     }
+
+    public function userBlocker($id)
+    {
+        $user = User::find($id);
+        $user->block = !$user->block;
+        $user->save();
+    }
 }

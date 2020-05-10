@@ -18,7 +18,7 @@ class isAdminToken
         $user = User::where('api_token', $request->header('_token'))->first();
 
         if ($user->role == 1) {
-            return next($request);
+            return $next($request);
         }
     }
 }

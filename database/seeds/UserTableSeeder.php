@@ -21,7 +21,10 @@ class UserTableSeeder extends Seeder
             'phone' => '123456789',
             'email' => 'admin@admin.com',
             'password' => Hash::make('secret'),
-            'api_token' => Str::random(60)
+            'api_token' => Str::random(60),
+            'role' => 1
         ]);
+
+        factory(User::class, 10)->create();
     }
 }

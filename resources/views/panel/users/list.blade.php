@@ -17,19 +17,37 @@
             </td>
             <td>
                 @if ($user->block)
-                <button class="btn btn-danger btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
+                <button
+                    class="btn btn-danger btn-sm"
+                    onclick="block({{ $user->id }})"
+                    id="block{{ $user->id }}"
+                >
                     Desbloquear
                 </button>
                 @else
-                <button class="btn btn-success btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
+                <button
+                    class="btn btn-success btn-sm"
+                    onclick="block({{ $user->id }})"
+                    id="block{{ $user->id }}"
+                >
                     Bloquear
                 </button>
-                @endif
-
-                @switch($user->role) @case(0)
-                <button class="btn btn-primary btn-sm">Hacer supervisor</button>
+                @endif @switch($user->role) @case(0)
+                <button
+                    class="btn btn-primary btn-sm"
+                    id="role{{ $user->id }}"
+                    onclick="role({{ $user->id }})"
+                >
+                    Hacer supervisor
+                </button>
                 @break @case(2)
-                <button class="btn btn-primary btn-sm">Hacer usuario</button>
+                <button
+                    class="btn btn-primary btn-sm"
+                    id="role{{ $user->id }}"
+                    onclick="role({{ $user->id }})"
+                >
+                    Hacer usuario
+                </button>
                 @break @default
                 <button class="btn btn-primary btn-sm">
                     Este usuario es Administrador
@@ -44,18 +62,18 @@
     window.onload = () => {
         $("#example1").DataTable();
 
-        block = function (id){
+        block = function(id) {
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8000/api/blockuser/"+id,
+                url: "http://localhost:8000/api/blockuser/" + id,
                 success: function(response) {
-                    if ($("#block"+id).hasClass("btn-danger")) {
-                        $("#block"+id)
+                    if ($("#block" + id).hasClass("btn-danger")) {
+                        $("#block" + id)
                             .removeClass("btn-danger")
                             .addClass("btn-success")
                             .html("Bloquear");
                     } else {
-                        $("#block"+id)
+                        $("#block" + id)
                             .removeClass("btn-success")
                             .addClass("btn-danger")
                             .html("Desbloquear");
@@ -65,10 +83,34 @@
                     "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
                         "content"
                     ),
-                    "_token": $('meta[name="authApiToken"]').attr("content")
+                    _token: $('meta[name="authApiToken"]').attr("content")
                 }
             });
-        }
+        };
+
+        role = function(id) {
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8000/api/changerole/" + id,
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+                        "content"
+                    ),
+                    _token: $('meta[name="authApiToken"]').attr("content")
+                },
+                success(resp) {
+                    if (
+                        $("#role" + id)
+                            .text()
+                            .trim() == "Hacer supervisor"
+                    ) {
+                        $("#role" + id).html("Hacer usuario");
+                    } else {
+                        $("#role" + id).html("Hacer supervisor");
+                    }
+                }
+            });
+        };
     };
 </script>
 @endsection

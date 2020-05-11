@@ -24,4 +24,5 @@ Auth::routes(['verify' => true]);
 Route::group(['prefix' => 'panel'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/users', 'UserController@getListForm')->name('users');
+    Route::get('/ads', 'AdController@getAdsForm')->name('ads');
 });

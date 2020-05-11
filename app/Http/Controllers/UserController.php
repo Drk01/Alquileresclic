@@ -27,4 +27,15 @@ class UserController extends Controller
         }
         $user->save();
     }
+
+    public function userRoleChanger($id)
+    {
+        $user = User::find($id);
+        if ($user->role == 2) {
+            $user->role = 0;
+        } else {
+            $user->role = 2;
+        }
+        $user->save();
+    }
 }

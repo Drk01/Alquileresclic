@@ -11,6 +11,7 @@ class UserController extends Controller
     {
         $this->middleware('isAdmin&Super')->only('getListForm');
         $this->middleware('isAdmin&SuperToken')->only('userBlocker');
+        $this->middleware('isAdminToken')->only('userRoleChanger');
     }
 
     public function getListForm()

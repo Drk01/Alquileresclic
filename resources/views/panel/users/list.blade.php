@@ -24,7 +24,10 @@
                 <button class="btn btn-success btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
                     Bloquear
                 </button>
-                @endif @switch($user->role) @case(0)
+                @endif
+
+                @if (auth()->user()->role == 1)
+                @switch($user->role) @case(0)
                 <button class="btn btn-primary btn-sm" id="role{{ $user->id }}" onclick="role({{ $user->id }})">
                     Hacer supervisor
                 </button>
@@ -37,6 +40,7 @@
                     Este usuario es Administrador
                 </button>
                 @endswitch
+                @endif
             </td>
         </tr>
         @endforeach
@@ -92,6 +96,9 @@
                     } else {
                         $("#role" + id).html("Hacer supervisor");
                     }
+                },
+                error(resp){
+                    console.log(resp);
                 }
             });
         };

@@ -15,6 +15,8 @@ class isAdminYSuper
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if (auth()->user()->role == 1 || auth()->user()->role == 2) {
+            return $next($request);
+        }
     }
 }

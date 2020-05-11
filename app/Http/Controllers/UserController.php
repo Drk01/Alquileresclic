@@ -9,8 +9,8 @@ class UserController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('isAdmin')->only('getListForm');
-        $this->middleware('isAdmin&Super')->only('userBlocker');
+        $this->middleware('isAdmin&Super')->only('getListForm');
+        $this->middleware('isAdmin&SuperToken')->only('userBlocker');
     }
 
     public function getListForm()

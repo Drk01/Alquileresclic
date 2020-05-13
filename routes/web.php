@@ -26,4 +26,7 @@ Route::group(['prefix' => 'panel'], function () {
     Route::get('/users', 'UserController@getListForm')->name('users');
     Route::get('/ads', 'AdController@getAdsForm')->name('ads');
     Route::get('/newad', 'AdController@getCreateAdForm')->name('createAd');
+
+    Route::group(['prefix' => 'categories'], function () {
+    });
 });

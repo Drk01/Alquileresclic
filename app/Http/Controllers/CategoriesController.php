@@ -23,5 +23,10 @@ class CategoriesController extends Controller
         $categories = Category::all();
         return view('panel.categories.create', compact('categories'));
     }
+
+    public function postCategory(Request $request)
+    {
+        Category::create($request->all());
+        return redirect()->back()->with(['categoryCreated' => true]);
     }
 }

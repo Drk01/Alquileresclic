@@ -25,6 +25,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
         />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <meta name="authApiToken" content="{{ auth()->user()->api_token }}" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css"
+        />
     </head>
 
     <body class="hold-transition sidebar-mini">
@@ -200,5 +208,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
             }}"></script>
         <!-- AdminLTE App -->
         <script src="{{ asset('js/adminlte.min.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     </body>
 </html>

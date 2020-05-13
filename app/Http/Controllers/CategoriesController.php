@@ -15,7 +15,7 @@ class CategoriesController extends Controller
 
     public function getCategoriesList()
     {
-        return view('panel.categories.list');
+        return view('panel.categories.list', ['categories' => Category::all()]);
     }
 
     public function getCreateCategoryForm()

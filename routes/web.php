@@ -28,5 +28,6 @@ Route::group(['prefix' => 'panel'], function () {
     Route::get('/newad', 'AdController@getCreateAdForm')->name('createAd');
 
     Route::group(['prefix' => 'categories'], function () {
+        Route::get('/', 'CategoriesController@getCategoriesList');
     });
 });

@@ -11,4 +11,9 @@ class AdController extends Controller
     {
         return view('panel.ads.list');
     }
+
+    public function getCreateAdForm()
+    {
+        return view('panel.ads.create');
+    }
 }

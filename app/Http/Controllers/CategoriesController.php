@@ -16,4 +16,9 @@ class CategoriesController extends Controller
     {
         return view('panel.categories.list');
     }
+
+    public function getCreateCategoryForm()
+    {
+        return view('panel.categories.create');
+    }
 }

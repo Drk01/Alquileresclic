@@ -11,4 +11,8 @@ class CategoriesController extends Controller
         $this->middleware('auth');
         $this->middleware('isAdmin');
     }
+
+    public function getCategoriesList(){
+        
+    }
 }

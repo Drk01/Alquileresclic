@@ -33,6 +33,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css"
         />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css
+"
+        />
     </head>
 
     <body class="hold-transition sidebar-mini">

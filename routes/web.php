@@ -25,4 +25,5 @@ Route::group(['prefix' => 'panel'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/users', 'UserController@getListForm')->name('users');
     Route::get('/ads', 'AdController@getAdsForm')->name('ads');
+    Route::get('/newad', 'AdController@getCreateAdForm')->name('createAd');
 });

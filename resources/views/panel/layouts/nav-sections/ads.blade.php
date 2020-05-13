@@ -18,5 +18,13 @@
             </a>
         </li>
         @endif
+        @if (auth()->user()->role == 0)
+        <li class="nav-item">
+            <a href="{{ route('createAd') }}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Crear anuncio</p>
+            </a>
+        </li>
+        @endif
     </ul>
 </li>

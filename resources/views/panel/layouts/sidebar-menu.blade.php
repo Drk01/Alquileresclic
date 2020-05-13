@@ -38,6 +38,7 @@
             </a>
         </li>
         @include('panel.layouts.nav-sections.logout')
+        @include('panel.layouts.nav-sections.categories')
     </ul>
 </nav>
 <!-- /.sidebar-menu -->

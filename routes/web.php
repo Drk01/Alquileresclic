@@ -30,5 +30,6 @@ Route::group(['prefix' => 'panel'], function () {
     Route::group(['prefix' => 'categories'], function () {
         Route::get('/', 'CategoriesController@getCategoriesList')->name('categoriesList');
         Route::get('/create', 'CategoriesController@getCreateCategoryForm')->name('createCategory');
+        Route::post('/create', 'CategoriesController@postCategory')->name('postCategory');
     });
 });

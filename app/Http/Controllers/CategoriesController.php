@@ -12,7 +12,8 @@ class CategoriesController extends Controller
         $this->middleware('isAdmin');
     }
 
-    public function getCategoriesList(){
-        
+    public function getCategoriesList()
+    {
+        return view('panel.categories.list');
     }
 }

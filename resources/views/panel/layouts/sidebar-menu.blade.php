@@ -1,8 +1,15 @@
 <!-- Sidebar Menu -->
 <nav class="mt-2">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <ul
+        class="nav nav-pills nav-sidebar flex-column"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false"
+    >
         @include('panel.layouts.nav-sections.ads')
         @include('panel.layouts.nav-sections.users')
+        @include('panel.layouts.nav-sections.categories')
+
         <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
         <li class="nav-item has-treeview menu-open">
@@ -38,7 +45,6 @@
             </a>
         </li>
         @include('panel.layouts.nav-sections.logout')
-        @include('panel.layouts.nav-sections.categories')
     </ul>
 </nav>
 <!-- /.sidebar-menu -->

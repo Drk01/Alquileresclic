@@ -17,30 +17,43 @@
             </td>
             <td>
                 @if ($user->block)
-                <button class="btn btn-danger btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
+                <button
+                    class="btn btn-danger btn-sm"
+                    onclick="block({{ $user->id }})"
+                    id="block{{ $user->id }}"
+                >
                     Desbloquear
                 </button>
                 @else
-                <button class="btn btn-success btn-sm" onclick="block({{ $user->id }})" id="block{{ $user->id }}">
+                <button
+                    class="btn btn-success btn-sm"
+                    onclick="block({{ $user->id }})"
+                    id="block{{ $user->id }}"
+                >
                     Bloquear
                 </button>
-                @endif
-
-                @if (auth()->user()->role == 1)
-                @switch($user->role) @case(0)
-                <button class="btn btn-primary btn-sm" id="role{{ $user->id }}" onclick="role({{ $user->id }})">
+                @endif @if (auth()->user()->role == 1) @switch($user->role)
+                @case(0)
+                <button
+                    class="btn btn-primary btn-sm"
+                    id="role{{ $user->id }}"
+                    onclick="role({{ $user->id }})"
+                >
                     Hacer supervisor
                 </button>
                 @break @case(2)
-                <button class="btn btn-primary btn-sm" id="role{{ $user->id }}" onclick="role({{ $user->id }})">
+                <button
+                    class="btn btn-primary btn-sm"
+                    id="role{{ $user->id }}"
+                    onclick="role({{ $user->id }})"
+                >
                     Hacer usuario
                 </button>
                 @break @default
                 <button class="btn btn-primary btn-sm">
                     Este usuario es Administrador
                 </button>
-                @endswitch
-                @endif
+                @endswitch @endif
             </td>
         </tr>
         @endforeach
@@ -53,7 +66,7 @@
         block = function(id) {
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8000/api/blockuser/" + id,
+                url: `${route("blockUser", id).url()}`,
                 success: function(response) {
                     if ($("#block" + id).hasClass("btn-danger")) {
                         $("#block" + id)
@@ -71,7 +84,7 @@
                     "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
                         "content"
                     ),
-                    "_token": $('meta[name="authApiToken"]').attr("content")
+                    _token: $('meta[name="authApiToken"]').attr("content")
                 }
             });
         };
@@ -79,12 +92,12 @@
         role = function(id) {
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8000/api/changerole/" + id,
+                url: `${route("userRoleChanger", id).url()}`,
                 headers: {
                     "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
                         "content"
                     ),
-                    "_token": $('meta[name="authApiToken"]').attr("content")
+                    _token: $('meta[name="authApiToken"]').attr("content")
                 },
                 success(resp) {
                     if (
@@ -97,7 +110,7 @@
                         $("#role" + id).html("Hacer supervisor");
                     }
                 },
-                error(resp){
+                error(resp) {
                     console.log(resp);
                 }
             });

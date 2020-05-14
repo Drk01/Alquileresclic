@@ -42,6 +42,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </head>
 
     <body class="hold-transition sidebar-mini">
+        @routes
         <div class="wrapper">
             <!-- Navbar -->
             <nav
@@ -188,7 +189,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- ./wrapper -->
 
         <!-- REQUIRED SCRIPTS -->
-
         <!-- jQuery -->
         <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
         <!-- Bootstrap 4 -->

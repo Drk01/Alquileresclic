@@ -23,3 +23,5 @@ Route::post('blockuser/{id}', 'UserController@userBlocker')->name('blockUser');
 Route::post('changerole/{id}', 'UserController@userRoleChanger')->name('userRoleChanger');
 
 Route::put('saveEditedCategory/{id}', 'CategoriesController@saveEditedCategory')->name('saveEditedCategory');
+
+Route::delete('deleteCategory/{id}', 'CategoriesController@deleteCategory')->name('deleteCategory');

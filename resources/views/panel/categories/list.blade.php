@@ -87,6 +87,12 @@
                             Cerrar
                         </button>
                         <button
+                            class="btn btn-danger"
+                            onclick="deleteCategory({{ $category->id }})"
+                        >
+                            <i class="fa fa-trash"></i>Eliminar
+                        </button>
+                        <button
                             type="button"
                             class="btn btn-primary"
                             onclick="saveEdited({{ $category->id }},
@@ -139,6 +145,20 @@
                 }
             });
         };
+    };
+    deleteCategory = function(id) {
+        console.log(id);
+        $.ajax({
+            type: "DELETE",
+            url: `${route("deleteCategory", id).url()}`,
+            success: function(response) {
+                window.location.reload(true);
+            },
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+                _token: $('meta[name="authApiToken"]').attr("content")
+            }
+        });
     };
 </script>
 @endsection

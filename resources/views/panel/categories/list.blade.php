@@ -122,7 +122,7 @@
 
         saveEdited = function(id, name, subcat) {
             $.ajax({
-                type: "POST",
+                type: "PUT",
                 url: `${route("saveEditedCategory", id).url()}`,
                 success: function(response) {
                     window.location.reload(true);

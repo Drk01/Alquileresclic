@@ -22,4 +22,4 @@ Route::post('blockuser/{id}', 'UserController@userBlocker')->name('blockUser');
 
 Route::post('changerole/{id}', 'UserController@userRoleChanger')->name('userRoleChanger');
 
-Route::post('saveEditedCategory/{id}', 'CategoriesController@saveEditedCategory')->name('saveEditedCategory');
+Route::put('saveEditedCategory/{id}', 'CategoriesController@saveEditedCategory')->name('saveEditedCategory');

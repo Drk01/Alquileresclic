@@ -9,8 +9,9 @@ class CategoriesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
-        $this->middleware('isAdmin');
+        $this->middleware('auth')->except('saveEditedCategory');;
+        $this->middleware('isAdmin')->except('saveEditedCategory');
+        $this->middleware('isAdminToken')->only('saveEditedCategory');
     }
 
     public function getCategoriesList()
@@ -28,5 +29,13 @@ class CategoriesController extends Controller
     {
         Category::create($request->all());
         return redirect()->back()->with(['categoryCreated' => true]);
+    }
+
+    public function saveEditedCategory(Request $request, $id)
+    {
+        $category = Category::findOrFail($id);
+        $category->name = $request->name;
+        $category->parent_id = $request->parent_id || "No";
+        $category->save();
     }
 }

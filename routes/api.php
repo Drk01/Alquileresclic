@@ -21,3 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('blockuser/{id}', 'UserController@userBlocker')->name('blockUser');
 
 Route::post('changerole/{id}', 'UserController@userRoleChanger')->name('userRoleChanger');
+
+Route::post('saveEditedCategory/{id}', 'CategoriesController@saveEditedCategory')->name('saveEditedCategory');

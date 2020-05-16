@@ -20,11 +20,32 @@ class UserTableSeeder extends Seeder
             'mothersLastname' => 'admin',
             'phone' => '123456789',
             'email' => 'admin@admin.com',
-            'password' => Hash::make('secret'),
+            'password' => Hash::make('123456789'),
+            'api_token' => Str::random(60),
+            'role' => 1
+        ]);
+        User::create([
+            'name' => 'supervisor',
+            'lastname' => 'supervisor',
+            'mothersLastname' => 'supervisor',
+            'phone' => '123456789',
+            'email' => 'supervisor@supervisor.com',
+            'password' => Hash::make('123456789'),
             'api_token' => Str::random(60),
             'role' => 1
         ]);
 
+        User::create([
+            'name' => 'usuario',
+            'lastname' => 'usuario',
+            'mothersLastname' => 'usuario',
+            'phone' => '123456789',
+            'email' => 'usuario@usuario.com',
+            'password' => Hash::make('123456789'),
+            'api_token' => Str::random(60),
+            'role' => 1
+        ]);
+        
         factory(User::class, 10)->create();
     }
 }

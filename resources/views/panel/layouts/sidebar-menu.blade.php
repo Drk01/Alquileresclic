@@ -6,6 +6,14 @@
         role="menu"
         data-accordion="false"
     >
+        <li class="nav-item">
+            <a href="{{ route('home') }}" class="nav-link">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                    Inicio
+                </p>
+            </a>
+        </li>
         @include('panel.layouts.nav-sections.ads')
         @include('panel.layouts.nav-sections.users')
         @include('panel.layouts.nav-sections.categories')

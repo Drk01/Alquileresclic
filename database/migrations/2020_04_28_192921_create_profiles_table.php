@@ -20,6 +20,7 @@ class CreateProfilesTable extends Migration
             $table->text('address');
             $table->string('city');
             $table->enum('type', ['Inmobiliaria', 'Empresa de alquiler', 'Alquilador independiente', 'Otro']);
+            $table->integer('remaining_ads')->default(3);
             $table->foreignId('user_id');
             $table->timestamps();
         });

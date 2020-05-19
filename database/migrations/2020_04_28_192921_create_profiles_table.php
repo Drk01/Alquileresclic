@@ -16,7 +16,6 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('phone');
             $table->text('address');
             $table->string('city');
             $table->enum('type', ['Inmobiliaria', 'Empresa de alquiler', 'Alquilador independiente', 'Otro']);

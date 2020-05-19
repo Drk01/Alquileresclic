@@ -32,7 +32,7 @@ class UserTableSeeder extends Seeder
             'email' => 'supervisor@supervisor.com',
             'password' => Hash::make('123456789'),
             'api_token' => Str::random(60),
-            'role' => 1
+            'role' => 2
         ]);
 
         User::create([
@@ -43,9 +43,9 @@ class UserTableSeeder extends Seeder
             'email' => 'usuario@usuario.com',
             'password' => Hash::make('123456789'),
             'api_token' => Str::random(60),
-            'role' => 1
+            'role' => 0
         ]);
-        
+
         factory(User::class, 10)->create();
     }
 }

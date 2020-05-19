@@ -1,11 +1,6 @@
 <!-- Sidebar Menu -->
 <nav class="mt-2">
-    <ul
-        class="nav nav-pills nav-sidebar flex-column"
-        data-widget="treeview"
-        role="menu"
-        data-accordion="false"
-    >
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
             <a href="{{ route('home') }}" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
@@ -52,6 +47,7 @@
                 </p>
             </a>
         </li>
+        @include('panel.layouts.nav-sections.perfíl')
         @include('panel.layouts.nav-sections.logout')
     </ul>
 </nav>

@@ -24,8 +24,11 @@ Auth::routes(['verify' => true]);
 Route::group(['prefix' => 'panel'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/users', 'UserController@getListForm')->name('users');
-    Route::get('/ads', 'AdController@getAdsForm')->name('ads');
-    Route::get('/newad', 'AdController@getCreateAdForm')->name('createAd');
+
+    Route::group(['prefix' => 'ads'], function () {
+        Route::get('/', 'AdController@getAdsForm')->name('ads');
+        Route::get('/create', 'AdController@getCreateAdForm')->name('createAd');
+    });
 
     Route::group(['prefix' => 'categories'], function () {
         Route::get('/', 'CategoriesController@getCategoriesList')->name('categoriesList');

@@ -37,6 +37,6 @@ Route::group(['prefix' => 'panel'], function () {
     });
 
     Route::group(['prefix' => 'profile'], function () {
-        
+        Route::get('/edit', 'ProfileController@getEditProfileForm');
     });
 });

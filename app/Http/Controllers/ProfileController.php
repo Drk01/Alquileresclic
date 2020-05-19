@@ -12,6 +12,6 @@ class ProfileController extends Controller
     }
     
     public function getEditProfileForm(){
-
+        return view('panel.profiles.editMyProfile');
     }
 }

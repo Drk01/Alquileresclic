@@ -89,6 +89,9 @@
                         Los cambios han sido guardados satisfactoriamente
                     </div>`);
                 },
+                error: function( resp ){
+                    console.log(resp)
+                },
                 data: {
                     name: $("#name").val(),
                     lastname: $("#lastname").val(),

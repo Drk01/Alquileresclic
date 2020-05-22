@@ -10,8 +10,13 @@ class ProfileController extends Controller
     {
         $this->middleware('auth');
     }
-    
-    public function getEditProfileForm(){
+
+    public function getEditProfileForm()
+    {
         return view('panel.profiles.editMyProfile');
+    }
+
+    public function saveProfileChanges()
+    {
     }
 }

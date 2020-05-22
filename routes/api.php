@@ -25,3 +25,5 @@ Route::post('changerole/{id}', 'UserController@userRoleChanger')->name('userRole
 Route::put('saveEditedCategory/{id}', 'CategoriesController@saveEditedCategory')->name('saveEditedCategory');
 
 Route::delete('deleteCategory/{id}', 'CategoriesController@deleteCategory')->name('deleteCategory');
+
+Route::post('saveProfile/{id}', 'ProfileController@saveProfileChanges')->name('saveProfileChanges');

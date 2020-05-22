@@ -34,14 +34,15 @@
         <div class="form-group">
             <label for="publicName ">Nombre público: </label>
             <input required type="text" name="publicName" id="publicName" class="form-control"
-                @isset(auth()->user()->profile()->name) value="{{ auth()->user()->profile()->name
+                @isset(auth()->user()->profile->publicName) value="{{ auth()->user()->profile->publicName
             }}" @endisset>
         </div>
         <div class="form-group">
             <label for="type">Tipo de anunciante: </label>
             <select name="type" id="type" class="form-control">
-                @isset(auth()->user()->profile()->type)
-                <option value="{{ $auth()->user()->profile()->type }}" selected disabled></option>
+                @isset(auth()->user()->profile->type)
+                <option value="{{ auth()->user()->profile->type }}" selected hidden>
+                    {{ auth()->user()->profile->type }}</option>
                 @endisset
                 <option>Alquilador independiente</option>
                 <option>Inmobiliaria</option>
@@ -51,18 +52,15 @@
         </div>
         <div class="form-group">
             <label for="city">Ciudad: </label>
-            <input required type="text" class="form-control" id="city" name="city"
-                @isset(auth()->user()->profile()->city) value="{{ auth()->user()->profile()->city
+            <input required type="text" class="form-control" id="city" name="city" @isset(auth()->user()->profile->city) value="{{ auth()->user()->profile->city
 
 
             }}" @endisset>
         </div>
         <div class="form-group">
             <label for="address">Dirección: </label>
-            <textarea name="address" id="address" cols="15" rows="5" class="form-control">
-@isset(auth()->user()->profile()->address)
-                {{ auth()->user()->profile()->address }}
-            @endisset</textarea>
+            <textarea name="address" id="address" cols="15" rows="5"
+                class="form-control">@isset(auth()->user()->profile->address){{ auth()->user()->profile->address }} @endisset</textarea>
         </div>
         <div class="form-group">
             <input required type="button" value="Actualizar datos" onclick="sendData({{ auth()->user()->id }})"

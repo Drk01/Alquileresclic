@@ -1,38 +1,41 @@
-@extends('panel.layouts.panel')
+@extends('panel.layouts.panel') @section('title') Editar perfil @endsection
+@section('subtitle') Editar perfil @endsection @section('content')
+<div class="row">
+    <div class="col" id="feedbackMessage">
 
-@section('title')
-Editar perfil
-@endsection
-
-@section('subtitle')
-Editar perfil
-@endsection
-
-@section('content')
+    </div>
+</div>
 <div class="row">
     <div class="col-5">
+
         <div class="form-group">
             <label for="name">Nombre: </label>
-            <input type="text" name="name" id="name" class="form-control" value="{{ auth()->user()->name }}">
+            <input type="text" name="name" id="name" class="form-control" value="{{ auth()->user()->name }}" />
         </div>
         <div class="form-group">
             <label for="lastname">Apellido paterno: </label>
             <input type="text" name="lastname" id="lastname" class="form-control"
-                value="{{ auth()->user()->lastname }}">
+                value="{{ auth()->user()->lastname }}" />
         </div>
         <div class="form-group">
             <label for="mothersLastname">Apellido materno: </label>
             <input type="text" name="mothersLastname" id="mothersLastname" class="form-control"
-                value="{{ auth()->user()->mothersLastname }}">
+                value="{{ auth()->user()->mothersLastname }}" />
         </div>
         <div class="form-group">
             <label for="phone">Teléfono: </label>
-            <input type="text" name="phone" id="phone" class="form-control" value="{{ auth()->user()->phone }}">
+            <input type="text" name="phone" id="phone" class="form-control" value="{{ auth()->user()->phone }}" />
         </div>
         <div class="form-group">
             <label for="type">Tipo de anunciante: </label>
             <select name="type" id="type" class="form-control">
-                <option value=""></option>
+                @isset(auth()->user()->profile()->type)
+                <option value="{{ $auth()->user()->profile()->type }}" selected disabled></option>
+                @endisset
+                <option>Alquilador independiente</option>
+                <option>Inmobiliaria</option>
+                <option>Empresa de alquiler</option>
+                <option>Otro</option>
             </select>
         </div>
     </div>
@@ -58,16 +61,49 @@ Editar perfil
             @endisset</textarea>
         </div>
         <div class="form-group">
-            <input type="button" value="Actualizar datos" onclick="sendData()" class="btn btn-primary float-right btn-lg">
+            <input type="button" value="Actualizar datos" onclick="sendData({{ auth()->user()->id }})"
+                class="btn btn-primary float-right btn-lg" />
         </div>
     </div>
 </div>
 
 <script>
-    window.onload = function (){
-        sendData = function() {
+    window.onload = function () {
+        sendData = function (id) {
+            console.log(id);
 
-        }
-    }
+            $.ajax({
+                type: "POST",
+                url: `${route("saveProfileChanges", id).url()}`,
+                success: function (response) {
+                    console.log(response);
+
+                    $('#feedbackMessage').append(`
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <h5><i class="icon fas fa-check"></i> Cambios guardados</h5>
+                        Los cambios han sido guardados satisfactoriamente
+                    </div>`);
+                },
+                data: {
+                    name: $('#name').val(),
+                    lastname: $('#lastname').val(),
+                    mothersLastname: $('#mothersLastname').val(),
+                    phone: $('#phone').val(),
+                    type: $('#type').val(),
+                    publicName: $('#publicName').val(),
+                    city: $('#city').val(),
+                    address: $('#address').val()
+                },
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+                                "content"
+                                ),
+                    "_token": $('meta[name="authApiToken"]').attr("content")
+                }
+            });
+
+        };
+    };
 </script>
 @endsection

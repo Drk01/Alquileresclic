@@ -9,8 +9,8 @@ class CategoriesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('saveEditedCategory', 'deleteCategory');;
-        $this->middleware('isAdmin')->except('saveEditedCategory', 'deleteCategory');
+        $this->middleware('auth')->except('saveEditedCategory', 'deleteCategory', 'getMainCategories');;
+        $this->middleware('isAdmin')->except('saveEditedCategory', 'deleteCategory', 'getMainCategories');
         $this->middleware('isAdminToken')->only('saveEditedCategory', 'deleteCategory');
     }
 
@@ -42,5 +42,10 @@ class CategoriesController extends Controller
     public function deleteCategory($id)
     {
         Category::destroy($id);
+    }
+
+    public function getMainCategories()
+    {
+        return Category::where('parent_id', 'No')->get();
     }
 }

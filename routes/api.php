@@ -27,3 +27,5 @@ Route::put('saveEditedCategory/{id}', 'CategoriesController@saveEditedCategory')
 Route::delete('deleteCategory/{id}', 'CategoriesController@deleteCategory')->name('deleteCategory');
 
 Route::post('saveProfile/{id}', 'ProfileController@saveProfileChanges')->name('saveProfileChanges');
+
+Route::get('getMainCategories', 'CategoriesController@getMainCategories')->name('getMainCategories');

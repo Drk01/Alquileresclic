@@ -37,7 +37,6 @@ Crear anuncio
         })
 
         getSecondaries = function (id){
-            console.log(id)
             $('#secondaryCategories').empty();
             $.get(route('getSecondaryCategories',id).url()).done((subcategories) => {
                 subcategories.forEach(subcategory => {

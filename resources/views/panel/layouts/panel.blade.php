@@ -42,7 +42,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </head>
 
     <body class="hold-transition sidebar-mini">
-        <div hidden>@routes</div>
+        @routes
         <div class="wrapper">
             <!-- Navbar -->
             <nav

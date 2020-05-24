@@ -39,10 +39,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css
 "
         />
+        @routes
     </head>
 
     <body class="hold-transition sidebar-mini">
-        @routes
         <div class="wrapper">
             <!-- Navbar -->
             <nav

@@ -29,3 +29,5 @@ Route::delete('deleteCategory/{id}', 'CategoriesController@deleteCategory')->nam
 Route::post('saveProfile/{id}', 'ProfileController@saveProfileChanges')->name('saveProfileChanges');
 
 Route::get('getMainCategories', 'CategoriesController@getMainCategories')->name('getMainCategories');
+
+Route::get('getSecondaryCategories/{id}', 'CategoriesController@getSecondaryCategories')->name('getSecondaryCategories');

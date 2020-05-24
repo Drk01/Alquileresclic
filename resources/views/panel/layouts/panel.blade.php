@@ -43,12 +43,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </head>
 
     <body class="hold-transition sidebar-mini">
-<<<<<<< HEAD
-=======
-        <div hidden>
-            @routes
-        </div>
->>>>>>> fb5c12740ab582dbde5618c188b57626003dca3e
         <div class="wrapper">
             <!-- Navbar -->
             <nav

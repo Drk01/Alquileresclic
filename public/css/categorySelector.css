@@ -1,0 +1,32 @@
+#categoryList {
+    font-size: 20px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.categoryList {
+    font-size: 20px;
+    list-style: none;
+    margin-top: 2.7em;
+    margin-left: -55px;
+}
+
+.primaryItem {
+    padding: 8px;
+    border: 1px gray solid;
+    font-family: sans-serif;
+    background-color: #e5e5e5;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+    color: rgba(0, 47, 52, 0.64);
+}
+
+.primaryItem:hover {
+    background-color: rgba(0, 47, 52, 0.14);
+}
+
+.rightArrow {
+    float: right;
+    margin-top: 5px;
+}

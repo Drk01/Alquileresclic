@@ -16,4 +16,9 @@ class AdController extends Controller
     {
         return view('panel.ads.create');
     }
+
+    public function getAddDetailsForm($category)
+    {
+        return response($category);
+    }
 }

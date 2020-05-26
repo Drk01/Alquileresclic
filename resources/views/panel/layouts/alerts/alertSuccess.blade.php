@@ -3,5 +3,5 @@
         &times;
     </button>
     <h5><i class="icon fas fa-check"></i> ¡Atención!</h5>
-    {{ session("message") }}
+    {{ $message }}
 </div>

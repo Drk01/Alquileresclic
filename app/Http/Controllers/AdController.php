@@ -27,4 +27,8 @@ class AdController extends Controller
         $category = Category::find($category);
         return view('panel.ads.addDetails', compact('category'));
     }
+
+    public function sendToModeration(Request $request)
+    {
+    }
 }

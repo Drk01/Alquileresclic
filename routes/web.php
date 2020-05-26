@@ -29,6 +29,9 @@ Route::group(['prefix' => 'panel'], function () {
         Route::get('/', 'AdController@getAdsForm')->name('ads');
         Route::get('/create', 'AdController@getCreateAdForm')->name('createAd');
         Route::get('/create/{category}', 'AdController@getAddDetailsForm')->name('addDetailsForm');
+
+        //Ruta para mandar a moderación los anuncios.
+        Route::post('/sendToModeration', 'AdController@sendToModeration')->name('sendToModeration');
     });
 
     Route::group(['prefix' => 'categories'], function () {

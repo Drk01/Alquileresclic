@@ -19,6 +19,7 @@ class AdController extends Controller
 
     public function getAddDetailsForm($category)
     {
-        return response($category);
+        $category = Category::find($category);
+        return view('panel.ads.addDetails', compact('category'));
     }
 }

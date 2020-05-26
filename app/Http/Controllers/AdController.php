@@ -14,7 +14,7 @@ class AdController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('sendToModeration');
+        $this->middleware('auth');
     }
 
     public function getAdsForm()

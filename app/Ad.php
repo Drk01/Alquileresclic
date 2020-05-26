@@ -20,4 +20,9 @@ class Ad extends Model
     {
         return $this->belongsToMany(Tag::class)->withTimestamps();
     }
+
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
 }

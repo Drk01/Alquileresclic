@@ -31,3 +31,5 @@ Route::post('saveProfile/{id}', 'ProfileController@saveProfileChanges')->name('s
 Route::get('getMainCategories', 'CategoriesController@getMainCategories')->name('getMainCategories');
 
 Route::get('getSecondaryCategories/{id}', 'CategoriesController@getSecondaryCategories')->name('getSecondaryCategories');
+
+Route::post('rejectAd', 'AdController@rejectAd')->name('rejectAd');

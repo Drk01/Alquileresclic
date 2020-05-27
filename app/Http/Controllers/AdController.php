@@ -15,8 +15,8 @@ class AdController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('rejectAd');
-        $this->middleware('hasCreatedProfile')->except('getAdsForm','rejectAd');
+        $this->middleware('auth')->except('rejectAd','acceptAd');
+        $this->middleware('hasCreatedProfile')->except('getAdsForm','rejectAd', 'acceptAd');
         $this->middleware('isAdmin&SuperToken')->only('rejectAd','acceptAd');
     }
 
@@ -104,6 +104,6 @@ class AdController extends Controller
     }
 
     public function acceptAd(Request $request){
-
+        Ad::find($request->id)->update(['status' => 'Aprobado']);
     }
 }

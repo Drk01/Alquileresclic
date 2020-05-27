@@ -50,6 +50,10 @@ class AdController extends Controller
         //Obteniendo el usuario que crea el anuncio.
         $usuario = User::find(auth()->user()->id);
 
+        if ($usuario->profile->remaining_ads <= 0) {
+            return redirect(route('home'))->with('dangerMessage', 'No tiene suficientes créditos de anuncios');
+        }
+
         try {
             //Creando el anuncio:
             $anuncio = new Ad;

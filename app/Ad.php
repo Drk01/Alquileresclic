@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ad extends Model
 {
+    protected $fillable = ['status'];
+    
     public function profile()
     {
         return $this->belongsTo(Profile::class);

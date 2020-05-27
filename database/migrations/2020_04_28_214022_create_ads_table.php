@@ -23,6 +23,7 @@ class CreateAdsTable extends Migration
             $table->string('code');
             $table->boolean('negotiable');
             $table->foreignId('profile_id');
+            $table->enum('status', ['En moderación', 'Aprobado', 'Rechazado'])->default('En moderación');
             $table->timestamps();
         });
     }

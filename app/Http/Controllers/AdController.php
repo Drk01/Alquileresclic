@@ -8,6 +8,7 @@ use App\Image;
 use App\Profile;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class AdController extends Controller
@@ -79,6 +80,7 @@ class AdController extends Controller
 
             foreach ($request->images as $image) {
                 $path =  $image->store('ads');
+                Storage::setVisibility($path, 'public');
                 $image = new Image([
                     'image_link' => $path
                 ]);

@@ -20,7 +20,8 @@ class AdController extends Controller
 
     public function getAdsForm()
     {
-        return view('panel.ads.list');
+        $ads = Ad::where('status', 'En moderación')->get();
+        return view('panel.ads.list', compact('ads'));
     }
 
     public function getCreateAdForm()

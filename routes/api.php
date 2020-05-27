@@ -33,3 +33,5 @@ Route::get('getMainCategories', 'CategoriesController@getMainCategories')->name(
 Route::get('getSecondaryCategories/{id}', 'CategoriesController@getSecondaryCategories')->name('getSecondaryCategories');
 
 Route::post('rejectAd', 'AdController@rejectAd')->name('rejectAd');
+
+Route::post('acceptAd', 'AdController@acceptAd')->name('acceptAd');

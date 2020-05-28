@@ -37,4 +37,30 @@ class ProfileController extends Controller
             'type' => $request->type
         ]);
     }
+
+    public function changePassword(Request $request){
+        return view('panel.profiles.changePassword');
+    }
+
+    public function savePassword(Request $request){
+
+        //Realizando validación de campos.
+        $request->validate([
+            'oldPassword' => ['required'],
+            'newPassword' => ['required', 'confirmed']
+        ]);
+
+        //Obteniendo usuario de la base de datos.
+        $user = User::find(auth()->user()->id)->first();
+
+        //Comprobando si la contraseña dada es la misma que la de la base de datos.
+        if ($user->password === bcrypt($request->oldPassword)) {
+            $user->password = bcrypt($request->newPassword);
+            $user->save();
+        }else{
+            return redirect(route('home'))->with('dangerMessage', 'Contraseña incorrecta');
+        }
+
+        return redirect(route('home'))->with('message', 'Contraseña cambiada satisfactoriamente');
+    }
 }

@@ -42,5 +42,7 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::group(['prefix' => 'profile'], function () {
         Route::get('/edit', 'ProfileController@getEditProfileForm')->name('editMyProfile');
+        Route::get('/changePassword', 'ProfileController@changePassword')->name('changePassword');
+        Route::post('/savePassword', 'ProfileController@savePassword')->name('savePassword');
     });
 });

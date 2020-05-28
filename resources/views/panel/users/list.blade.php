@@ -54,6 +54,10 @@
                     Este usuario es Administrador
                 </button>
                 @endswitch @endif
+
+                @if( auth()->user()->role == 1)
+                    <button class="btn btn-success btn-sm" id="confianza{{ $user->id }}" onclick="confianza({{ $user->id }})">Hacer anunciante de confianza</button>
+                @endif
             </td>
         </tr>
         @endforeach
@@ -115,6 +119,30 @@
                 }
             });
         };
+
+        confianza = function(id){
+
+            $.ajax({
+                type: "POST",
+                url: `${route('toggleConfianza')}`,
+                data: {
+                    id
+                },
+                success: function (response) {
+                    if($('#confianza'+id).hasClass('btn-success')){
+                        $('#confianza'+id).removeClass('btn-success').addClass('btn-danger').html('Quitar anunciante de confianza')
+                    }else{
+                        $('#confianza'+id).removeClass('btn-danger').addClass('btn-success').html('Hacer anunciante de confianza');
+                    }
+                },
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+                        "content"
+                    ),
+                    _token: $('meta[name="authApiToken"]').attr("content")
+                }
+            });
+        }
     };
 </script>
 @endsection

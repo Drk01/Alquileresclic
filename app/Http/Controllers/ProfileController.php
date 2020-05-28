@@ -66,6 +66,8 @@ class ProfileController extends Controller
     }
 
     public function toggleConfianza(Request $request){
-
+        $user = User::findOrfail($request->id);
+        $user->confianza = !$user->confianza;
+        $user->save();
     }
 }

@@ -10,7 +10,8 @@ class ProfileController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['saveProfileChanges']);
+        $this->middleware('auth')->except(['saveProfileChanges', 'toggleConfianza']);
+        $this->middleware('isAdminToken');
     }
 
     public function getEditProfileForm()
@@ -62,5 +63,9 @@ class ProfileController extends Controller
         }
 
         return redirect(route('home'))->with('message', 'Contraseña cambiada satisfactoriamente');
+    }
+
+    public function toggleConfianza(Request $request){
+
     }
 }

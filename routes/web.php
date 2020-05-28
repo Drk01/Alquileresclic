@@ -45,4 +45,12 @@ Route::group(['prefix' => 'panel'], function () {
         Route::get('/changePassword', 'ProfileController@changePassword')->name('changePassword');
         Route::post('/savePassword', 'ProfileController@savePassword')->name('savePassword');
     });
+
+    Route::group(['prefix' => 'facebook'], function () {
+        Route::get('sign-in', 'FacebookController@redirectToProvider')->name('facebookRedirectToProvider');
+
+        Route::get('sign-in/redirect', 'FacebookController@handleProviderCallback')->name('facebookHandleProviderCallback');
+    });
+
+    
 });

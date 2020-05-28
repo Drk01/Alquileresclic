@@ -1,21 +1,21 @@
 <!-- Sidebar Menu -->
 <nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a href="{{ route('home') }}" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                     Inicio
                 </p>
             </a>
-        </li>
+        </li> --}}
         @include('panel.layouts.nav-sections.ads')
         @include('panel.layouts.nav-sections.users')
         @include('panel.layouts.nav-sections.categories')
 
         <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
-        <li class="nav-item has-treeview menu-open">
+        {{-- <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
@@ -46,7 +46,7 @@
                     <span class="right badge badge-danger">New</span>
                 </p>
             </a>
-        </li>
+        </li> --}}
         @include('panel.layouts.nav-sections.perfíl')
         @include('panel.layouts.nav-sections.logout')
     </ul>

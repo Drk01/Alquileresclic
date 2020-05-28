@@ -67,5 +67,6 @@ class Kernel extends HttpKernel
         'isAdminToken' => \App\Http\Middleware\isAdminToken::class,
         'isAdmin&Super' => \App\Http\Middleware\isAdminYSuper::class,
         'hasCreatedProfile' => \App\Http\Middleware\hasCreatedProfile::class,
+        'isBlocked' => \App\Http\Middleware\isBlocked::class
     ];
 }

@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class GoogleController extends Controller
 {
-    //
+    public function redirectToProvider()
+    {
+        return Socialite::driver('google')->redirect();
+    }
 }

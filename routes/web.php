@@ -52,5 +52,9 @@ Route::group(['prefix' => 'panel'], function () {
         Route::get('sign-in/redirect', 'FacebookController@handleProviderCallback')->name('facebookHandleProviderCallback');
     });
 
-    
+    Route::group(['prefix' => 'google'], function () {
+        Route::get('sign-in', 'GoogleController@redirectToProvider')->name('googleRedirectToProvider');
+
+        Route::get('sign-in/redirect', 'GoogleController@handleProviderCallback')->name('googleHandleProviderCallback');
+    });
 });

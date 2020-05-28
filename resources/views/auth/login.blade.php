@@ -64,6 +64,10 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class="form-group row mt-3">
+                            <a href="{{ route('facebookRedirectToProvider') }}" class="btn btn-primary btn-block">Autenticación con Facebook</a>
+                        </div>
                     </form>
                 </div>
             </div>

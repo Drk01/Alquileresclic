@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Ad;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,6 +25,39 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if (isset(auth()->user()->profile->remaining_ads)) {
+            $remainingAds = auth()->user()->profile->remaining_ads;
+        } else {
+            $remainingAds = 0;
+        }
+
+        if (isset(auth()->user()->profile->ads)) {
+            $uploadedAds = auth()->user()->profile->ads->where('status', 'Aprobado')->count();
+        } else {
+            $uploadedAds = 0;
+        }
+
+        if (isset(auth()->user()->favorites)) {
+            $favoritesCounter = auth()->user()->favorites->count();
+        } else {
+            $favoritesCounter = 0;
+        }
+
+        $cantidadAnuncios = Ad::where('status', 'Aprobado')->count();
+        $scoresAnuncios = Ad::where('status', 'Aprobado')->get('score');
+
+        $sumatoria = 0;
+        foreach ($scoresAnuncios as $key) {
+            $sumatoria += $key->score;
+        }
+
+        $promedio = $sumatoria / $cantidadAnuncios;
+
+        return view('home', [
+            'remainingAds' => $remainingAds,
+            'uploadedAds' => $uploadedAds,
+            'favoritesCounter' => $favoritesCounter,
+            'rating' => $promedio
+        ]);
     }
 }

@@ -29,5 +29,16 @@
             </a>
         </li>
         @endif
+        @if (auth()->user()->role == 0)
+        <li class="nav-item">
+            <a href="{{ route('myAds') }}" @if (\Request::route()->getName()== 'myAds') class=" nav-link active"
+                @else
+                class="nav-link"
+                @endif>
+                <i class="far fa-circle nav-icon"></i>
+                <p>Ver mis anuncios</p>
+            </a>
+        </li>
+        @endif
     </ul>
 </li>

@@ -15,8 +15,8 @@ class AdController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('rejectAd', 'acceptAd');
-        $this->middleware('hasCreatedProfile')->except('getAdsForm', 'rejectAd', 'acceptAd');
+        $this->middleware('auth')->except('rejectAd', 'acceptAd', 'saveAdChanges');
+        $this->middleware('hasCreatedProfile')->except('getAdsForm', 'rejectAd', 'acceptAd', 'saveAdChanges');
         $this->middleware('isAdmin&SuperToken')->only('rejectAd', 'acceptAd');
     }
 
@@ -116,8 +116,20 @@ class AdController extends Controller
         return view('panel.ads.myAds', compact('ads'));
     }
 
-    public function saveAdChanges()
+    public function saveAdChanges(Request $request)
     {
-        
+        $ad = Ad::findOrfail($request->id);
+        $ad->title = $request->title;
+        $ad->description = $request->description;
+        $ad->currency = $request->currency;
+        $ad->period = $request->period;
+        $ad->cost = $request->cost;
+
+        if ($request->negotiable == 'Sí') {
+            $ad->negotiable = true;
+        } else {
+            $ad->negotiable = false;
+        }
+        $ad->save();
     }
 }

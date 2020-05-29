@@ -38,4 +38,4 @@ Route::post('acceptAd', 'AdController@acceptAd')->name('acceptAd');
 
 Route::post('toggleConfianza', 'ProfileController@toggleConfianza')->name('toggleConfianza');
 
-Route::put('saveAdChanges', 'AdController@saveAdChanges')->name('saveAdChanges');
+Route::post('saveAdChanges', 'AdController@saveAdChanges')->name('saveAdChanges');

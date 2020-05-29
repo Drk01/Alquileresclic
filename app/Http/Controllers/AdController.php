@@ -100,11 +100,13 @@ class AdController extends Controller
         }
     }
 
-    public function rejectAd(Request $request){
+    public function rejectAd(Request $request)
+    {
         Ad::find($request->id)->update(['status' => 'Rechazado']);
     }
 
-    public function acceptAd(Request $request){
+    public function acceptAd(Request $request)
+    {
         Ad::find($request->id)->update(['status' => 'Aprobado']);
     }
 }

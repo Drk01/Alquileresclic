@@ -20,7 +20,10 @@
         @endif
         @if (auth()->user()->role == 0)
         <li class="nav-item">
-            <a href="{{ route('createAd') }}" class="nav-link">
+            <a href="{{ route('createAd') }}" @if (\Request::route()->getName()== 'createAd') class=" nav-link active"
+                @else
+                class="nav-link"
+                @endif>
                 <i class="far fa-circle nav-icon"></i>
                 <p>Crear anuncio</p>
             </a>

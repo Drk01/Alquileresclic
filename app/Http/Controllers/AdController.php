@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Ad;
 use App\Category;
+use App\Favorite;
 use App\Image;
 use App\Profile;
 use App\User;
@@ -131,5 +132,11 @@ class AdController extends Controller
             $ad->negotiable = false;
         }
         $ad->save();
+    }
+
+    public function getMyFavorites()
+    {
+        $favorites = Favorite::where('user_id', auth()->user()->id)->get();
+        return view('panel.ads.showMyFavorites', compact('favorites'));
     }
 }

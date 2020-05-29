@@ -39,11 +39,13 @@ class ProfileController extends Controller
         ]);
     }
 
-    public function changePassword(Request $request){
+    public function changePassword(Request $request)
+    {
         return view('panel.profiles.changePassword');
     }
 
-    public function savePassword(Request $request){
+    public function savePassword(Request $request)
+    {
 
         //Realizando validación de campos.
         $request->validate([
@@ -58,14 +60,15 @@ class ProfileController extends Controller
         if ($user->password === bcrypt($request->oldPassword)) {
             $user->password = bcrypt($request->newPassword);
             $user->save();
-        }else{
+        } else {
             return redirect(route('home'))->with('dangerMessage', 'Contraseña incorrecta');
         }
 
         return redirect(route('home'))->with('message', 'Contraseña cambiada satisfactoriamente');
     }
 
-    public function toggleConfianza(Request $request){
+    public function toggleConfianza(Request $request)
+    {
         $user = User::findOrfail($request->id);
         $user->confianza = !$user->confianza;
         $user->save();

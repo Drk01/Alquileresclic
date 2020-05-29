@@ -52,7 +52,7 @@ Mis anuncios <small class="text-muted">(Aprobados)</small>
                     , 'cost': $('#cost').val()
                 }
                 , success: function(response) {
-                    console.log(response);
+                    location.reload();
                 }
                 , error: function(response) {
                     console.log(response);

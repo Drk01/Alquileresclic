@@ -40,5 +40,16 @@
             </a>
         </li>
         @endif
+        <li class="nav-item">
+            <a href="{{ route('getMyFavorites') }}" @if (\Request::route()->getName()== 'getMyFavorites') class="
+                nav-link
+                active"
+                @else
+                class="nav-link"
+                @endif>
+                <i class="far fa-circle nav-icon"></i>
+                <p>Anuncios favoritos</p>
+            </a>
+        </li>
     </ul>
 </li>

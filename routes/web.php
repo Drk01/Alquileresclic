@@ -32,6 +32,9 @@ Route::group(['prefix' => 'panel'], function () {
 
         //Ruta para mandar a moderación los anuncios.
         Route::post('/sendToModeration', 'AdController@sendToModeration')->name('sendToModeration');
+
+        //Ruta para ver los anuncios del usuario.
+        Route::get('/myAds', 'AdController@getMyAds')->name('myAds');
     });
 
     Route::group(['prefix' => 'categories'], function () {

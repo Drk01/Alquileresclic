@@ -15,9 +15,9 @@ class AdController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('rejectAd','acceptAd');
-        $this->middleware('hasCreatedProfile')->except('getAdsForm','rejectAd', 'acceptAd');
-        $this->middleware('isAdmin&SuperToken')->only('rejectAd','acceptAd');
+        $this->middleware('auth')->except('rejectAd', 'acceptAd');
+        $this->middleware('hasCreatedProfile')->except('getAdsForm', 'rejectAd', 'acceptAd');
+        $this->middleware('isAdmin&SuperToken')->only('rejectAd', 'acceptAd');
     }
 
     public function getAdsForm()

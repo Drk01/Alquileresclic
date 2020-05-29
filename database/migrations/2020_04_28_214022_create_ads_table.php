@@ -25,6 +25,7 @@ class CreateAdsTable extends Migration
             $table->foreignId('profile_id');
             $table->enum('status', ['En moderación', 'Aprobado', 'Rechazado'])->default('En moderación');
             $table->string('slug');
+            $table->integer('score')->default(0);
             $table->timestamps();
         });
     }

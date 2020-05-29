@@ -109,4 +109,9 @@ class AdController extends Controller
     {
         Ad::find($request->id)->update(['status' => 'Aprobado']);
     }
+
+    public function getMyAds()
+    {
+        return view('panel.ads.myAds');
+    }
 }

@@ -112,6 +112,7 @@ class AdController extends Controller
 
     public function getMyAds()
     {
-        return view('panel.ads.myAds');
+        $ads = Ad::where('profile_id', auth()->user()->profile->id)->get();
+        return view('panel.ads.myAds', compact('ads'));
     }
 }

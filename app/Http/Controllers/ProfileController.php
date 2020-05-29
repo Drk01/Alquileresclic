@@ -11,7 +11,7 @@ class ProfileController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->except(['saveProfileChanges', 'toggleConfianza']);
-        $this->middleware('isAdminToken')->except(['getEditProfileForm', 'changePassword']);
+        $this->middleware('isAdminToken')->only('toggleConfianza');
     }
 
     public function getEditProfileForm()

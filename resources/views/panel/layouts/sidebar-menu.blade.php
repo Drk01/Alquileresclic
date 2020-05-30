@@ -47,6 +47,7 @@
                 </p>
             </a>
         </li> --}}
+        @include('panel.layouts.nav-sections.packages')
         @include('panel.layouts.nav-sections.perfíl')
         @include('panel.layouts.nav-sections.logout')
     </ul>

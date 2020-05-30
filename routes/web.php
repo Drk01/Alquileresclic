@@ -63,4 +63,8 @@ Route::group(['prefix' => 'panel'], function () {
 
         Route::get('sign-in/redirect', 'GoogleController@handleProviderCallback')->name('googleHandleProviderCallback');
     });
+
+    Route::group(['prefix' => 'packages'], function () {
+        Route::get('', 'PackageController@showPackageOptions')->name('showPackageOptions');
+    });
 });

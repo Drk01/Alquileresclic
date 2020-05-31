@@ -31,24 +31,6 @@
         href="https://alquilaclic.com/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Alquilaclic.com &raquo; RSS de los comentarios"
         href="https://alquilaclic.com/comments/feed/" />
-    <script type="text/javascript">
-        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/alquilaclic.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.5"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-    </script>
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
     <link rel='stylesheet' id='wp-block-library-css'
         href='https://alquilaclic.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1.5' type='text/css'
         media='all' />
@@ -800,7 +782,7 @@
         }
     </style>
 
-    //Importando iconos de FontAwesome
+    {{-- Importando iconos de FontAwesome --}}
     <script src="https://use.fontawesome.com/e31326b11b.js"></script>
 </head>
 
@@ -844,65 +826,70 @@
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1746 dropdown ">
                                     <a title="Inmuebles" href="/categoria-del-anuncio/alquiler-de-inmuebles/"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Inmuebles <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1754"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1754">
-                                            <a title="Apartamentos"
-                                                href="/categoria-del-anuncio/apartamentos/">Apartamentos</a></li>
-                                        <li id="menu-item-1938"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1938">
-                                            <a title="Parqueaderos"
-                                                href="/categoria-del-anuncio/alquiler-de-parqueaderos">Parqueaderos</a>
-                                        </li>
-                                        <li id="menu-item-1756"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1756">
-                                            <a title="Habitaciones"
-                                                href="/categoria-del-anuncio/habitaciones/">Habitaciones</a></li>
-                                        <li id="menu-item-1939"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1939">
-                                            <a title="Camping"
-                                                href="/categoria-del-anuncio/alquiler-de-camping/">Camping</a></li>
-                                        <li id="menu-item-1940"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1940">
-                                            <a title="Cabañas"
-                                                href="/categoria-del-anuncio/alquiler-de-cabanas/">Cabañas</a></li>
-                                        <li id="menu-item-1758"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1758">
-                                            <a title="Bodegas" href="/categoria-del-anuncio/oficina/">Bodegas</a></li>
-                                        <li id="menu-item-1759"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1759">
-                                            <a title="Salones" href="/categoria-del-anuncio/salones/">Salones</a></li>
-                                        <li id="menu-item-1757"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1757">
-                                            <a title="Oficinas" href="/categoria-del-anuncio/oficina/">Oficinas</a></li>
-                                        <li id="menu-item-1941"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1941">
-                                            <a title="Locales"
-                                                href="/categoria-del-anuncio/alquiler-de-locales">Locales</a></li>
-                                        <li id="menu-item-1755"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1755">
-                                            <a title="Fincas" href="/categoria-del-anuncio/fincas/">Fincas</a></li>
-                                        <li id="menu-item-2123"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2123">
-                                            <a title="Casas" href="/categoria-del-anuncio/alquiler-de-casas/">Casas</a>
-                                        </li>
-                                        <li id="menu-item-1942"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1942">
-                                            <a title="Lotes" href="/categoria-del-anuncio/alquiler-de-lotes">Lotes</a>
-                                        </li>
-                                        <li id="menu-item-1932"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1932">
-                                            <a title="Otros"
-                                                href="https://alquilaclic.com/categoria-del-anuncio/otros-alquiler-de-inmuebles/">Otros</a>
-                                        </li>
-                                    </ul>
+                                        aria-haspopup="true">Inmuebles <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1754"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1754">
+                                                <a title="Apartamentos"
+                                                    href="/categoria-del-anuncio/apartamentos/">Apartamentos</a></li>
+                                            <li id="menu-item-1938"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1938">
+                                                <a title="Parqueaderos"
+                                                    href="/categoria-del-anuncio/alquiler-de-parqueaderos">Parqueaderos</a>
+                                            </li>
+                                            <li id="menu-item-1756"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1756">
+                                                <a title="Habitaciones"
+                                                    href="/categoria-del-anuncio/habitaciones/">Habitaciones</a></li>
+                                            <li id="menu-item-1939"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1939">
+                                                <a title="Camping"
+                                                    href="/categoria-del-anuncio/alquiler-de-camping/">Camping</a></li>
+                                            <li id="menu-item-1940"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1940">
+                                                <a title="Cabañas"
+                                                    href="/categoria-del-anuncio/alquiler-de-cabanas/">Cabañas</a></li>
+                                            <li id="menu-item-1758"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1758">
+                                                <a title="Bodegas" href="/categoria-del-anuncio/oficina/">Bodegas</a>
+                                            </li>
+                                            <li id="menu-item-1759"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1759">
+                                                <a title="Salones" href="/categoria-del-anuncio/salones/">Salones</a>
+                                            </li>
+                                            <li id="menu-item-1757"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1757">
+                                                <a title="Oficinas" href="/categoria-del-anuncio/oficina/">Oficinas</a>
+                                            </li>
+                                            <li id="menu-item-1941"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1941">
+                                                <a title="Locales"
+                                                    href="/categoria-del-anuncio/alquiler-de-locales">Locales</a></li>
+                                            <li id="menu-item-1755"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1755">
+                                                <a title="Fincas" href="/categoria-del-anuncio/fincas/">Fincas</a></li>
+                                            <li id="menu-item-2123"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2123">
+                                                <a title="Casas"
+                                                    href="/categoria-del-anuncio/alquiler-de-casas/">Casas</a>
+                                            </li>
+                                            <li id="menu-item-1942"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1942">
+                                                <a title="Lotes"
+                                                    href="/categoria-del-anuncio/alquiler-de-lotes">Lotes</a>
+                                            </li>
+                                            <li id="menu-item-1932"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1932">
+                                                <a title="Otros"
+                                                    href="https://alquilaclic.com/categoria-del-anuncio/otros-alquiler-de-inmuebles/">Otros</a>
+                                            </li>
+                                        </ul>
                                 </li>
                                 <li id="menu-item-1747"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1747 dropdown ">
                                     <a title="Animales" href="/categoria-del-anuncio/animales/" data-toggle="dropdown"
                                         class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Animales <i
-                                            class="aficon-angle-right"></i></a>
+                                            class="fas fa-angle-right"></i></a>
                                     <ul role="menu" class=" dropdown-menu">
                                         <li id="menu-item-1975"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1975">
@@ -932,145 +919,156 @@
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1749 dropdown ">
                                     <a title="Transporte" href="/categoria-del-anuncio/alquiler-de-vehiculos/"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Transporte <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1945"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1945">
-                                            <a title="Carros Antiguos"
-                                                href="/categoria-del-anuncio/alquiler-de-carros-antiguos">Carros
-                                                Antiguos</a></li>
-                                        <li id="menu-item-1804"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1804">
-                                            <a title="Helicopteros"
-                                                href="/categoria-del-anuncio/alquiler-de-helicopteros/">Helicopteros</a>
-                                        </li>
-                                        <li id="menu-item-1946"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1946">
-                                            <a title="Cuatrimotos"
-                                                href="/categoria-del-anuncio/alquiler-de-cuatrimotos">Cuatrimotos</a>
-                                        </li>
-                                        <li id="menu-item-1976"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1976">
-                                            <a title="Yates Botes"
-                                                href="/categoria-del-anuncio/alquiler-de-yates-botes">Yates Botes</a>
-                                        </li>
-                                        <li id="menu-item-1974"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1974">
-                                            <a title="Limusinas"
-                                                href="/categoria-del-anuncio/alquiler-de-limusinas">Limusinas</a></li>
-                                        <li id="menu-item-1803"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1803">
-                                            <a title="Bicicletas"
-                                                href="/categoria-del-anuncio/alquiler-de-bicicletas/">Bicicletas</a>
-                                        </li>
-                                        <li id="menu-item-1802"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1802">
-                                            <a title="Aviones"
-                                                href="/categoria-del-anuncio/alquiler-de-aviones/">Aviones</a></li>
-                                        <li id="menu-item-1801"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1801">
-                                            <a title="Carros"
-                                                href="/categoria-del-anuncio/alquiler-de-Carros">Carros</a></li>
-                                        <li id="menu-item-1805"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1805">
-                                            <a title="Motos" href="/categoria-del-anuncio/alquiler-de-motos/">Motos</a>
-                                        </li>
-                                        <li id="menu-item-1806"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1806">
-                                            <a title="Otros"
-                                                href="/categoria-del-anuncio/otros-alquiler-de-vehiculos/">Otros</a>
-                                        </li>
-                                    </ul>
+                                        aria-haspopup="true">Transporte <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1945"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1945">
+                                                <a title="Carros Antiguos"
+                                                    href="/categoria-del-anuncio/alquiler-de-carros-antiguos">Carros
+                                                    Antiguos</a></li>
+                                            <li id="menu-item-1804"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1804">
+                                                <a title="Helicopteros"
+                                                    href="/categoria-del-anuncio/alquiler-de-helicopteros/">Helicopteros</a>
+                                            </li>
+                                            <li id="menu-item-1946"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1946">
+                                                <a title="Cuatrimotos"
+                                                    href="/categoria-del-anuncio/alquiler-de-cuatrimotos">Cuatrimotos</a>
+                                            </li>
+                                            <li id="menu-item-1976"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1976">
+                                                <a title="Yates Botes"
+                                                    href="/categoria-del-anuncio/alquiler-de-yates-botes">Yates
+                                                    Botes</a>
+                                            </li>
+                                            <li id="menu-item-1974"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1974">
+                                                <a title="Limusinas"
+                                                    href="/categoria-del-anuncio/alquiler-de-limusinas">Limusinas</a>
+                                            </li>
+                                            <li id="menu-item-1803"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1803">
+                                                <a title="Bicicletas"
+                                                    href="/categoria-del-anuncio/alquiler-de-bicicletas/">Bicicletas</a>
+                                            </li>
+                                            <li id="menu-item-1802"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1802">
+                                                <a title="Aviones"
+                                                    href="/categoria-del-anuncio/alquiler-de-aviones/">Aviones</a></li>
+                                            <li id="menu-item-1801"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1801">
+                                                <a title="Carros"
+                                                    href="/categoria-del-anuncio/alquiler-de-Carros">Carros</a></li>
+                                            <li id="menu-item-1805"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1805">
+                                                <a title="Motos"
+                                                    href="/categoria-del-anuncio/alquiler-de-motos/">Motos</a>
+                                            </li>
+                                            <li id="menu-item-1806"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1806">
+                                                <a title="Otros"
+                                                    href="/categoria-del-anuncio/otros-alquiler-de-vehiculos/">Otros</a>
+                                            </li>
+                                        </ul>
                                 </li>
                                 <li id="menu-item-1750"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1750 dropdown ">
                                     <a title="Ropa" href="/categoria-del-anuncio/alquiler-de-ropa/"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Ropa <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1798"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1798">
-                                            <a title="Uniformes"
-                                                href="/categoria-del-anuncio/alquiler-de-uniformes/">Uniformes</a></li>
-                                        <li id="menu-item-1947"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1947">
-                                            <a title="Disfraces"
-                                                href="/categoria-del-anuncio/alquiler-de-disfraces">Disfraces</a></li>
-                                        <li id="menu-item-1797"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1797">
-                                            <a title="Smoking"
-                                                href="/categoria-del-anuncio/alquiler-de-smoking/">Smoking</a></li>
-                                        <li id="menu-item-1799"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1799">
-                                            <a title="Vestidos"
-                                                href="/categoria-del-anuncio/alquiler-de-vestidos/">Vestidos</a></li>
-                                        <li id="menu-item-1800"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1800">
-                                            <a title="Otros" href="/categoria-del-anuncio/otros-ropa/">Otros</a></li>
-                                    </ul>
+                                        aria-haspopup="true">Ropa <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1798"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1798">
+                                                <a title="Uniformes"
+                                                    href="/categoria-del-anuncio/alquiler-de-uniformes/">Uniformes</a>
+                                            </li>
+                                            <li id="menu-item-1947"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1947">
+                                                <a title="Disfraces"
+                                                    href="/categoria-del-anuncio/alquiler-de-disfraces">Disfraces</a>
+                                            </li>
+                                            <li id="menu-item-1797"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1797">
+                                                <a title="Smoking"
+                                                    href="/categoria-del-anuncio/alquiler-de-smoking/">Smoking</a></li>
+                                            <li id="menu-item-1799"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1799">
+                                                <a title="Vestidos"
+                                                    href="/categoria-del-anuncio/alquiler-de-vestidos/">Vestidos</a>
+                                            </li>
+                                            <li id="menu-item-1800"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1800">
+                                                <a title="Otros" href="/categoria-del-anuncio/otros-ropa/">Otros</a>
+                                            </li>
+                                        </ul>
                                 </li>
                                 <li id="menu-item-1751"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1751 dropdown ">
                                     <a title="Maquinaria" href="/categoria-del-anuncio/maquinaria/"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Maquinaria <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1948"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1948">
-                                            <a title="Retroexcavadoras"
-                                                href="/categoria-del-anuncio/alquiler-de-Retroexcavadoras">Retroexcavadoras</a>
-                                        </li>
-                                        <li id="menu-item-1949"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1949">
-                                            <a title="Plantas Eléctricas"
-                                                href="/categoria-del-anuncio/alquiler-de-Plantas-Electricas">Plantas
-                                                Eléctricas</a></li>
-                                        <li id="menu-item-1795"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1795">
-                                            <a title="Montacargas"
-                                                href="/categoria-del-anuncio/alquiler-de-montacargas/">Montacargas</a>
-                                        </li>
-                                        <li id="menu-item-1793"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1793">
-                                            <a title="Excavadoras"
-                                                href="/categoria-del-anuncio/alquiler-de-excavadoras/">Excavadoras</a>
-                                        </li>
-                                        <li id="menu-item-1950"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1950">
-                                            <a title="Aplanadoras"
-                                                href="/categoria-del-anuncio/alquiler-de-Aplanadoras">Aplanadoras</a>
-                                        </li>
-                                        <li id="menu-item-1951"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1951">
-                                            <a title="Andamios"
-                                                href="/categoria-del-anuncio/alquiler-de-Andamios">Andamios</a></li>
-                                        <li id="menu-item-1952"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1952">
-                                            <a title="Volquetas"
-                                                href="/categoria-del-anuncio/alquiler-de-Volquetas">Volquetas</a></li>
-                                        <li id="menu-item-1953"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1953">
-                                            <a title="Taladros"
-                                                href="/categoria-del-anuncio/alquiler-de-Taladros">Taladros</a></li>
-                                        <li id="menu-item-1954"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1954">
-                                            <a title="Martillos"
-                                                href="/categoria-del-anuncio/alquiler-de-Martillos">Martillos</a></li>
-                                        <li id="menu-item-1794"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1794">
-                                            <a title="Gruas" href="/categoria-del-anuncio/alquiler-de-gruas/">Gruas</a>
-                                        </li>
-                                        <li id="menu-item-1796"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1796">
-                                            <a title="Otros" href="/categoria-del-anuncio/otros-maquinaria/">Otros</a>
-                                        </li>
-                                    </ul>
+                                        aria-haspopup="true">Maquinaria <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1948"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1948">
+                                                <a title="Retroexcavadoras"
+                                                    href="/categoria-del-anuncio/alquiler-de-Retroexcavadoras">Retroexcavadoras</a>
+                                            </li>
+                                            <li id="menu-item-1949"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1949">
+                                                <a title="Plantas Eléctricas"
+                                                    href="/categoria-del-anuncio/alquiler-de-Plantas-Electricas">Plantas
+                                                    Eléctricas</a></li>
+                                            <li id="menu-item-1795"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1795">
+                                                <a title="Montacargas"
+                                                    href="/categoria-del-anuncio/alquiler-de-montacargas/">Montacargas</a>
+                                            </li>
+                                            <li id="menu-item-1793"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1793">
+                                                <a title="Excavadoras"
+                                                    href="/categoria-del-anuncio/alquiler-de-excavadoras/">Excavadoras</a>
+                                            </li>
+                                            <li id="menu-item-1950"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1950">
+                                                <a title="Aplanadoras"
+                                                    href="/categoria-del-anuncio/alquiler-de-Aplanadoras">Aplanadoras</a>
+                                            </li>
+                                            <li id="menu-item-1951"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1951">
+                                                <a title="Andamios"
+                                                    href="/categoria-del-anuncio/alquiler-de-Andamios">Andamios</a></li>
+                                            <li id="menu-item-1952"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1952">
+                                                <a title="Volquetas"
+                                                    href="/categoria-del-anuncio/alquiler-de-Volquetas">Volquetas</a>
+                                            </li>
+                                            <li id="menu-item-1953"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1953">
+                                                <a title="Taladros"
+                                                    href="/categoria-del-anuncio/alquiler-de-Taladros">Taladros</a></li>
+                                            <li id="menu-item-1954"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1954">
+                                                <a title="Martillos"
+                                                    href="/categoria-del-anuncio/alquiler-de-Martillos">Martillos</a>
+                                            </li>
+                                            <li id="menu-item-1794"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1794">
+                                                <a title="Gruas"
+                                                    href="/categoria-del-anuncio/alquiler-de-gruas/">Gruas</a>
+                                            </li>
+                                            <li id="menu-item-1796"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1796">
+                                                <a title="Otros"
+                                                    href="/categoria-del-anuncio/otros-maquinaria/">Otros</a>
+                                            </li>
+                                        </ul>
                                 </li>
                                 <li id="menu-item-1752"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1752 dropdown ">
                                     <a title="Deportes" href="/categoria-del-anuncio/deportes/" data-toggle="dropdown"
                                         class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Deportes <i
-                                            class="aficon-angle-right"></i></a>
+                                            class="fas fa-angle-right"></i></a>
                                     <ul role="menu" class=" dropdown-menu">
                                         <li id="menu-item-1783"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1783">
@@ -1112,7 +1110,7 @@
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1792 dropdown ">
                                     <a title="Eventos" href="/categoria-del-anuncio/eventos/" data-toggle="dropdown"
                                         class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Eventos <i
-                                            class="aficon-angle-right"></i></a>
+                                            class="fas fa-angle-right"></i></a>
                                     <ul role="menu" class=" dropdown-menu">
                                         <li id="menu-item-1788"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1788">
@@ -1148,113 +1146,121 @@
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1807 dropdown ">
                                     <a title="Oficina" href="/categoria-del-anuncio/alquiler-de-equipo-de-oficina/"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Oficina <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1958"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1958">
-                                            <a title="Computadores"
-                                                href="/categoria-del-anuncio/alquiler-de-Computadores">Computadores</a>
-                                        </li>
-                                        <li id="menu-item-1959"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1959">
-                                            <a title="Walkie Talkies"
-                                                href="/categoria-del-anuncio/alquiler-de-Walkie-Talkies">Walkie
-                                                Talkies</a></li>
-                                        <li id="menu-item-1960"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1960">
-                                            <a title="Video Beam"
-                                                href="/categoria-del-anuncio/alquiler-de-Video-beam">Video Beam</a></li>
-                                        <li id="menu-item-1961"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1961">
-                                            <a title="Televisores"
-                                                href="/categoria-del-anuncio/alquiler-de-Televisores">Televisores</a>
-                                        </li>
-                                        <li id="menu-item-1962"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1962">
-                                            <a title="Impresoras"
-                                                href="/categoria-del-anuncio/alquiler-de-Impresoras">Impresoras</a></li>
-                                        <li id="menu-item-1963"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1963">
-                                            <a title="Servidores"
-                                                href="/categoria-del-anuncio/alquiler-de-Servidores">Servidores</a></li>
-                                        <li id="menu-item-1964"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1964">
-                                            <a title="Escritorios"
-                                                href="/categoria-del-anuncio/alquiler-de-Escritorios">Escritorios</a>
-                                        </li>
-                                        <li id="menu-item-1965"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1965">
-                                            <a title="Teléfonos"
-                                                href="/categoria-del-anuncio/alquiler-de-Telefonos">Teléfonos</a></li>
-                                        <li id="menu-item-1966"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1966">
-                                            <a title="Tableros"
-                                                href="/categoria-del-anuncio/alquiler-de-Tableros">Tableros</a></li>
-                                        <li id="menu-item-1967"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1967">
-                                            <a title="Sillas"
-                                                href="/categoria-del-anuncio/alquiler-de-sillas">Sillas</a></li>
-                                        <li id="menu-item-1968"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1968">
-                                            <a title="Otros"
-                                                href="/categoria-del-anuncio/alquiler-de-otros-oficina">Otros</a></li>
-                                    </ul>
+                                        aria-haspopup="true">Oficina <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1958"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1958">
+                                                <a title="Computadores"
+                                                    href="/categoria-del-anuncio/alquiler-de-Computadores">Computadores</a>
+                                            </li>
+                                            <li id="menu-item-1959"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1959">
+                                                <a title="Walkie Talkies"
+                                                    href="/categoria-del-anuncio/alquiler-de-Walkie-Talkies">Walkie
+                                                    Talkies</a></li>
+                                            <li id="menu-item-1960"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1960">
+                                                <a title="Video Beam"
+                                                    href="/categoria-del-anuncio/alquiler-de-Video-beam">Video Beam</a>
+                                            </li>
+                                            <li id="menu-item-1961"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1961">
+                                                <a title="Televisores"
+                                                    href="/categoria-del-anuncio/alquiler-de-Televisores">Televisores</a>
+                                            </li>
+                                            <li id="menu-item-1962"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1962">
+                                                <a title="Impresoras"
+                                                    href="/categoria-del-anuncio/alquiler-de-Impresoras">Impresoras</a>
+                                            </li>
+                                            <li id="menu-item-1963"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1963">
+                                                <a title="Servidores"
+                                                    href="/categoria-del-anuncio/alquiler-de-Servidores">Servidores</a>
+                                            </li>
+                                            <li id="menu-item-1964"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1964">
+                                                <a title="Escritorios"
+                                                    href="/categoria-del-anuncio/alquiler-de-Escritorios">Escritorios</a>
+                                            </li>
+                                            <li id="menu-item-1965"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1965">
+                                                <a title="Teléfonos"
+                                                    href="/categoria-del-anuncio/alquiler-de-Telefonos">Teléfonos</a>
+                                            </li>
+                                            <li id="menu-item-1966"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1966">
+                                                <a title="Tableros"
+                                                    href="/categoria-del-anuncio/alquiler-de-Tableros">Tableros</a></li>
+                                            <li id="menu-item-1967"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1967">
+                                                <a title="Sillas"
+                                                    href="/categoria-del-anuncio/alquiler-de-sillas">Sillas</a></li>
+                                            <li id="menu-item-1968"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1968">
+                                                <a title="Otros"
+                                                    href="/categoria-del-anuncio/alquiler-de-otros-oficina">Otros</a>
+                                            </li>
+                                        </ul>
                                 </li>
                                 <li id="menu-item-1973"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973 dropdown ">
                                     <a title="Publicidad" href="/categoria-del-anuncio/alquiler-de-publicidad"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Publicidad <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1969"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1969">
-                                            <a title="Carro Valla"
-                                                href="/categoria-del-anuncio/alquiler-de-Carro-Valla">Carro Valla</a>
-                                        </li>
-                                        <li id="menu-item-1970"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1970">
-                                            <a title="Moto Valla"
-                                                href="/categoria-del-anuncio/alquiler-de-Moto-Valla">Moto Valla</a></li>
-                                        <li id="menu-item-1971"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1971">
-                                            <a title="Vallas"
-                                                href="/categoria-del-anuncio/alquiler-de-Vallas">Vallas</a></li>
-                                        <li id="menu-item-1972"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972">
-                                            <a title="Otros"
-                                                href="/categoria-del-anuncio/alquiler-de-otros-publicidad">Otros</a>
-                                        </li>
-                                    </ul>
+                                        aria-haspopup="true">Publicidad <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1969"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1969">
+                                                <a title="Carro Valla"
+                                                    href="/categoria-del-anuncio/alquiler-de-Carro-Valla">Carro
+                                                    Valla</a>
+                                            </li>
+                                            <li id="menu-item-1970"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1970">
+                                                <a title="Moto Valla"
+                                                    href="/categoria-del-anuncio/alquiler-de-Moto-Valla">Moto Valla</a>
+                                            </li>
+                                            <li id="menu-item-1971"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1971">
+                                                <a title="Vallas"
+                                                    href="/categoria-del-anuncio/alquiler-de-Vallas">Vallas</a></li>
+                                            <li id="menu-item-1972"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972">
+                                                <a title="Otros"
+                                                    href="/categoria-del-anuncio/alquiler-de-otros-publicidad">Otros</a>
+                                            </li>
+                                        </ul>
                                 </li>
                                 <li id="menu-item-1943"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1943 dropdown ">
                                     <a title="Otros" href="/categoria-del-anuncio/alquiler-de-otros"
                                         data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                        aria-haspopup="true">Otros <i class="aficon-angle-right"></i></a>
-                                    <ul role="menu" class=" dropdown-menu">
-                                        <li id="menu-item-1809"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1809">
-                                            <a title="Estudio de Grabación"
-                                                href="/categoria-del-anuncio/alquiler-de-estudio-de-grabacion/">Estudio
-                                                de Grabación</a></li>
-                                        <li id="menu-item-1808"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1808">
-                                            <a title="Equipo Médico"
-                                                href="/categoria-del-anuncio/alquiler-de-equipos-medico/">Equipo
-                                                Médico</a></li>
-                                        <li id="menu-item-1978"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1978">
-                                            <a title="Hidrolavadoras"
-                                                href="/categoria-del-anuncio/alquiler-de-hidrolavadoras">Hidrolavadoras</a>
-                                        </li>
-                                        <li id="menu-item-1977"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1977">
-                                            <a title="Lavadoras"
-                                                href="/categoria-del-anuncio/alquiler-de-lavadoras">Lavadoras</a></li>
-                                        <li id="menu-item-1753"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1753">
-                                            <a title="Otros" href="/categoria-del-anuncio/otros/">Otros</a></li>
-                                    </ul>
+                                        aria-haspopup="true">Otros <i class="fas fa-angle-right"></i>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li id="menu-item-1809"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1809">
+                                                <a title="Estudio de Grabación"
+                                                    href="/categoria-del-anuncio/alquiler-de-estudio-de-grabacion/">Estudio
+                                                    de Grabación</a></li>
+                                            <li id="menu-item-1808"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1808">
+                                                <a title="Equipo Médico"
+                                                    href="/categoria-del-anuncio/alquiler-de-equipos-medico/">Equipo
+                                                    Médico</a></li>
+                                            <li id="menu-item-1978"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1978">
+                                                <a title="Hidrolavadoras"
+                                                    href="/categoria-del-anuncio/alquiler-de-hidrolavadoras">Hidrolavadoras</a>
+                                            </li>
+                                            <li id="menu-item-1977"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1977">
+                                                <a title="Lavadoras"
+                                                    href="/categoria-del-anuncio/alquiler-de-lavadoras">Lavadoras</a>
+                                            </li>
+                                            <li id="menu-item-1753"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1753">
+                                                <a title="Otros" href="/categoria-del-anuncio/otros/">Otros</a></li>
+                                        </ul>
                                 </li>
                             </ul>
                         </li>
@@ -1273,17 +1279,17 @@
                     </a>
                     <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/" class="account-btn header-user-icon"
                         title="Tu Cuenta">
-                        <i class="aficon-user"></i>
+                        <i class="fas fa-user"></i>
                     </a>
                     <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/?screen=messages"
                         class="account-btn header-messages-icon" title="Mensajes">
-                        <i class="aficon-messages"></i>
+                        <i class="fas fa-envelope-open"></i>
                         <div class="messages-unread-count"></div>
                     </a>
 
                     <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/?screen=new"
                         class="submit-btn-wrap submit-btn ">
-                        <i class="aficon-add-ad"></i>
+                        <i class="fas fa-ad"></i>
                         <span>Publica YA</span>
                     </a> <a href="javascript:void(0);" class="small-sidebar-open navigation-trigger"
                         data-target=".navigation-wrap">
@@ -1337,8 +1343,10 @@
 
                                     <div class="styled-select">
                                         <select name="category">
-                                            <option value="">En Categoría</option>
-                                            <option value="381">Inmuebles</option>
+                                            @foreach (\App\Category::all() as $item)
+                                            <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                            @endforeach
+
                                         </select>
                                     </div> <a href="javascript:void(0);" class="af-button submit-form">Buscar </a>
                                 </form>
@@ -1372,6 +1380,8 @@
                                                 style="height: 30px; clear: both; width:100%;"></div>
                                             <div class="adverts-list clearfix af-items-3" data-visibleitems=""
                                                 data-autoplay="">
+
+                                                {{-- Anuncio  --}}
                                                 <div class="af-item-wrap">
                                                     <div class="white-block hover-shadow advert-item advert-grid ">
 
@@ -1393,7 +1403,7 @@
                                                                         href="https://alquilaclic.com/categoria-del-anuncio/inmuebles/">Inmuebles</a>
                                                                 </div>
                                                                 <div class="advert-city text-overflow">
-                                                                    <i class="aficon-map-marker-alt-o"></i>
+                                                                    <i class="fas fa-map-marker-alt"></i>
                                                                     Cartagena </div>
                                                             </div>
                                                             <h5 class="adv-title">
@@ -1422,207 +1432,10 @@
                                                             data-icon="" data-iconwidth="" data-iconheight=""></div>
                                                     </div>
                                                 </div>
-                                                <div class="af-item-wrap">
-                                                    <div class="white-block hover-shadow advert-item advert-grid ">
-
-                                                        <div class="advert-tags">
-                                                            <div class="ribbon negotiable">
-                                                                Negociable </div>
-                                                        </div>
-
-                                                        <a href="https://alquilaclic.com/anuncios/alquilo-hermosas-bicicletas/"
-                                                            class="advert-media">
-                                                            <img width="355" height="250"
-                                                                src="https://alquilaclic.com/wp-content/uploads/2019/10/20191020_201228_edited-355x250.jpg?v=1571621098"
-                                                                class="attachment-adifier-grid size-adifier-grid wp-post-image"
-                                                                alt="" /> </a>
-
-                                                        <div class="white-block-content">
-
-                                                            <div class="top-advert-meta flex-wrap">
-                                                                <div class="advert-cat text-overflow">
-                                                                </div>
-                                                                <div class="advert-city text-overflow">
-                                                                    <i class="aficon-map-marker-alt-o"></i>
-                                                                    Villa de Leyva </div>
-                                                            </div>
-                                                            <h5 class="adv-title">
-                                                                <a href="https://alquilaclic.com/anuncios/alquilo-hermosas-bicicletas/"
-                                                                    class="text-overflow"
-                                                                    title="Alquilo Hermosas Bicicletas">
-                                                                    Alquilo Hermosas Bicicletas </a>
-                                                            </h5>
-                                                            <div class="bottom-advert-meta flex-wrap">
-                                                                <div class="price"><span
-                                                                        class="price-symbol">$</span>10,000<span
-                                                                        class="no-strike">/ Hora</span></div>
-                                                                <div class="flex-right">
-
-                                                                    <a title="Favoritos" href="javascript:void(0);"
-                                                                        class="process-favorites" data-id="2216">
-                                                                        <i class="aficon-heart-o"></i>
-                                                                        <span>Favoritos</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="search-map-la-long hidden" data-id="2216"
-                                                            data-longitude="-73.52705800" data-latitude="5.63649900"
-                                                            data-icon="" data-iconwidth="" data-iconheight=""></div>
-                                                    </div>
-                                                </div>
-                                                <div class="af-item-wrap">
-                                                    <div class="white-block hover-shadow advert-item advert-grid ">
-
-
-                                                        <a href="https://alquilaclic.com/anuncios/renta-una-moto-en-bogota/"
-                                                            class="advert-media">
-                                                            <img width="355" height="250"
-                                                                src="https://alquilaclic.com/wp-content/uploads/2019/10/RENT-A-BIKE-BOGOTÁ.-355x250.png"
-                                                                class="attachment-adifier-grid size-adifier-grid wp-post-image"
-                                                                alt="" /> </a>
-
-                                                        <div class="white-block-content">
-
-                                                            <div class="top-advert-meta flex-wrap">
-                                                                <div class="advert-cat text-overflow">
-                                                                </div>
-                                                                <div class="advert-city text-overflow">
-                                                                    <i class="aficon-map-marker-alt-o"></i>
-                                                                    Bogotá </div>
-                                                            </div>
-                                                            <h5 class="adv-title">
-                                                                <a href="https://alquilaclic.com/anuncios/renta-una-moto-en-bogota/"
-                                                                    class="text-overflow"
-                                                                    title="RENTA UNA MOTO EN BOGOTA">
-                                                                    RENTA UNA MOTO EN BOGOTA </a>
-                                                            </h5>
-                                                            <div class="bottom-advert-meta flex-wrap">
-                                                                <div class="price"><span
-                                                                        class="price-symbol">$</span>160,000<span
-                                                                        class="no-strike">/ semanal</span></div>
-                                                                <div class="flex-right">
-
-                                                                    <a title="Favoritos" href="javascript:void(0);"
-                                                                        class="process-favorites" data-id="2200">
-                                                                        <i class="aficon-heart-o"></i>
-                                                                        <span>Favoritos</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="search-map-la-long hidden" data-id="2200"
-                                                            data-longitude="-74.07209200" data-latitude="4.71098860"
-                                                            data-icon="" data-iconwidth="" data-iconheight=""></div>
-                                                    </div>
-                                                </div>
-                                                <div class="af-item-wrap">
-                                                    <div class="white-block hover-shadow advert-item advert-grid ">
-
-                                                        <div class="advert-tags">
-                                                            <div class="ribbon negotiable">
-                                                                Negociable </div>
-                                                        </div>
-
-                                                        <a href="https://alquilaclic.com/anuncios/alquiler-de-luces-sonido-camara-de-humo-eventos-bogota/"
-                                                            class="advert-media">
-                                                            <img width="355" height="250"
-                                                                src="https://alquilaclic.com/wp-content/uploads/2019/08/foto0149-355x250.jpg"
-                                                                class="attachment-adifier-grid size-adifier-grid wp-post-image"
-                                                                alt="" /> </a>
-
-                                                        <div class="white-block-content">
-
-                                                            <div class="top-advert-meta flex-wrap">
-                                                                <div class="advert-cat text-overflow">
-                                                                </div>
-                                                                <div class="advert-city text-overflow">
-                                                                    <i class="aficon-map-marker-alt-o"></i>
-                                                                    Bogota </div>
-                                                            </div>
-                                                            <h5 class="adv-title">
-                                                                <a href="https://alquilaclic.com/anuncios/alquiler-de-luces-sonido-camara-de-humo-eventos-bogota/"
-                                                                    class="text-overflow"
-                                                                    title="Alquiler de Luces Sonido Camara de Humo Eventos Bogota">
-                                                                    Alquiler de Luces Sonido Camara de Humo Eventos
-                                                                    Bogota </a>
-                                                            </h5>
-                                                            <div class="bottom-advert-meta flex-wrap">
-                                                                <div class="price"></div>
-                                                                <div class="flex-right">
-
-                                                                    <a title="Favoritos" href="javascript:void(0);"
-                                                                        class="process-favorites" data-id="2192">
-                                                                        <i class="aficon-heart-o"></i>
-                                                                        <span>Favoritos</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="search-map-la-long hidden" data-id="2192"
-                                                            data-longitude="-74.08012390" data-latitude="4.71672459"
-                                                            data-icon="" data-iconwidth="" data-iconheight=""></div>
-                                                    </div>
-                                                </div>
-                                                <div class="af-item-wrap">
-                                                    <div class="white-block hover-shadow advert-item advert-grid ">
-
-                                                        <div class="advert-tags">
-                                                            <div class="ribbon urgent">
-                                                                Confiable </div>
-                                                            <div class="ribbon negotiable">
-                                                                Negociable </div>
-                                                        </div>
-
-                                                        <a href="https://alquilaclic.com/anuncios/inflables-para-tu-fiesta-infantil/"
-                                                            class="advert-media">
-                                                            <img width="355" height="250"
-                                                                src="https://alquilaclic.com/wp-content/uploads/2019/06/inflable2-355x250.jpg"
-                                                                class="attachment-adifier-grid size-adifier-grid wp-post-image"
-                                                                alt="" /> </a>
-
-                                                        <div class="white-block-content">
-
-                                                            <div class="top-advert-meta flex-wrap">
-                                                                <div class="advert-cat text-overflow">
-                                                                </div>
-                                                                <div class="advert-city text-overflow">
-                                                                    <i class="aficon-map-marker-alt-o"></i>
-                                                                    Bogotá </div>
-                                                            </div>
-                                                            <h5 class="adv-title">
-                                                                <a href="https://alquilaclic.com/anuncios/inflables-para-tu-fiesta-infantil/"
-                                                                    class="text-overflow"
-                                                                    title="INFLABLES PARA TU FIESTA INFANTIL">
-                                                                    INFLABLES PARA TU FIESTA INFANTIL </a>
-                                                            </h5>
-                                                            <div class="bottom-advert-meta flex-wrap">
-                                                                <div class="price"><span
-                                                                        class="price-symbol">$</span>100,000<span
-                                                                        class="no-strike">/ día</span></div>
-                                                                <div class="flex-right">
-
-                                                                    <a title="Favoritos" href="javascript:void(0);"
-                                                                        class="process-favorites" data-id="2170">
-                                                                        <i class="aficon-heart-o"></i>
-                                                                        <span>Favoritos</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="search-map-la-long hidden" data-id="2170"
-                                                            data-longitude="-74.11835474" data-latitude="4.51199281"
-                                                            data-icon="" data-iconwidth="" data-iconheight=""></div>
-                                                    </div>
-                                                </div>
                                             </div>
+                                            </>
                                         </div>
-                                    </div>
-                                    <div id="terminan-pronto"
+                                        {{-- <div id="terminan-pronto"
                                         class="kc-elm kc-css-586669 kc_tab ui-tabs-panel kc_ui-tabs-hide kc_clearfix ">
                                         <div class="kc_tab_content">
                                             <div class="kc-elm kc-css-963619"
@@ -1652,7 +1465,7 @@
                                                             <div class="advert-cat text-overflow">
                                                             </div>
                                                             <div class="advert-city text-overflow">
-                                                                <i class="aficon-map-marker-alt-o"></i>
+                                                                <i class="fas fa-map-marker-alt"></i>
                                                                 Bogotá </div>
                                                         </div>
                                                         <div class="adv-bottom-card">
@@ -1703,7 +1516,7 @@
                                                             <div class="advert-cat text-overflow">
                                                             </div>
                                                             <div class="advert-city text-overflow">
-                                                                <i class="aficon-map-marker-alt-o"></i>
+                                                                <i class="fas fa-map-marker-alt"></i>
                                                                 Bogota </div>
                                                         </div>
                                                         <div class="adv-bottom-card">
@@ -1749,7 +1562,7 @@
                                                             <div class="advert-cat text-overflow">
                                                             </div>
                                                             <div class="advert-city text-overflow">
-                                                                <i class="aficon-map-marker-alt-o"></i>
+                                                                <i class="fas fa-map-marker-alt"></i>
                                                                 Bogotá </div>
                                                         </div>
                                                         <div class="adv-bottom-card">
@@ -1800,7 +1613,7 @@
                                                             <div class="advert-cat text-overflow">
                                                             </div>
                                                             <div class="advert-city text-overflow">
-                                                                <i class="aficon-map-marker-alt-o"></i>
+                                                                <i class="fas fa-map-marker-alt"></i>
                                                                 Villa de Leyva </div>
                                                         </div>
                                                         <div class="adv-bottom-card">
@@ -1851,7 +1664,7 @@
                                                                     href="https://alquilaclic.com/categoria-del-anuncio/inmuebles/">Inmuebles</a>
                                                             </div>
                                                             <div class="advert-city text-overflow">
-                                                                <i class="aficon-map-marker-alt-o"></i>
+                                                                <i class="fas fa-map-marker-alt"></i>
                                                                 Cartagena </div>
                                                         </div>
                                                         <div class="adv-bottom-card">
@@ -1883,15 +1696,15 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div> --}}
                                     </div>
                                 </div>
+
+
                             </div>
-
-
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section class="kc-elm kc-css-369184 kc_row">
             <div class="kc-row-container  kc-container">
@@ -1906,7 +1719,7 @@
                             <div class="hiw-wrapper hiw-wrapper-3 flex-wrap flex-start-v">
                                 <div class="hiw-item service hiw-1590897732">
                                     <div class="service-icon animation" style="background: #00a591; color: #ffffff"><i
-                                            class="sl-user"></i></div>
+                                            class="fas fa-user"></i></div>
                                     <div class="service-content">
                                         <h5>Crea una cuenta</h5>
                                         <p>Crear una cuenta es muy fácil y lo puedes hacer con tu red social</p>
@@ -1922,7 +1735,7 @@
                                 </div>
                                 <div class="hiw-item service hiw-1590897732">
                                     <div class="service-icon animation" style="background: #00a591; color: #ffffff"><i
-                                            class="sl-bell"></i></div>
+                                            class="far fa-bell"></i></div>
                                     <div class="service-content">
                                         <h5>Crea Tu Anuncio Gratis </h5>
                                         <p>Puedes Publicar anuncios totalmente gratis por tiempo ilimitado</p>
@@ -1938,7 +1751,8 @@
                                 </div>
                                 <div class="hiw-item service hiw-1590897732">
                                     <div class="service-icon animation" style="background: #00a591; color: #ffffff"><i
-                                            class="sl-diamond"></i></div>
+                                            class="fas fa-gem"></i>
+                                    </div>
                                     <div class="service-content">
                                         <h5>AlquilaCLIC</h5>
                                         <p>Espera a que te contacten para alquilar </p>
@@ -2033,449 +1847,6 @@
                             <li
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1593 current_page_item menu-item-1647">
                                 <a title="Home" href="https://alquilaclic.com/">Home</a></li>
-                            <li
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1600 dropdown ">
-                                <a title="Categorías" href="https://alquilaclic.com/anuncios/" data-toggle="dropdown"
-                                    class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Categorías <i
-                                        class="aficon-angle-down"></i></a>
-                                <ul role="menu" class=" dropdown-menu">
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1746 dropdown ">
-                                        <a title="Inmuebles" href="/categoria-del-anuncio/alquiler-de-inmuebles/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Inmuebles <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1754">
-                                                <a title="Apartamentos"
-                                                    href="/categoria-del-anuncio/apartamentos/">Apartamentos</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1938">
-                                                <a title="Parqueaderos"
-                                                    href="/categoria-del-anuncio/alquiler-de-parqueaderos">Parqueaderos</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1756">
-                                                <a title="Habitaciones"
-                                                    href="/categoria-del-anuncio/habitaciones/">Habitaciones</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1939">
-                                                <a title="Camping"
-                                                    href="/categoria-del-anuncio/alquiler-de-camping/">Camping</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1940">
-                                                <a title="Cabañas"
-                                                    href="/categoria-del-anuncio/alquiler-de-cabanas/">Cabañas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1758">
-                                                <a title="Bodegas" href="/categoria-del-anuncio/oficina/">Bodegas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1759">
-                                                <a title="Salones" href="/categoria-del-anuncio/salones/">Salones</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1757">
-                                                <a title="Oficinas" href="/categoria-del-anuncio/oficina/">Oficinas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1941">
-                                                <a title="Locales"
-                                                    href="/categoria-del-anuncio/alquiler-de-locales">Locales</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1755">
-                                                <a title="Fincas" href="/categoria-del-anuncio/fincas/">Fincas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2123">
-                                                <a title="Casas"
-                                                    href="/categoria-del-anuncio/alquiler-de-casas/">Casas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1942">
-                                                <a title="Lotes"
-                                                    href="/categoria-del-anuncio/alquiler-de-lotes">Lotes</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1932">
-                                                <a title="Otros"
-                                                    href="https://alquilaclic.com/categoria-del-anuncio/otros-alquiler-de-inmuebles/">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1747 dropdown ">
-                                        <a title="Animales" href="/categoria-del-anuncio/animales/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Animales <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1975">
-                                                <a title="Guacales"
-                                                    href="/categoria-del-anuncio/alquiler-de-guacales">Guacales</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778">
-                                                <a title="Caballos"
-                                                    href="/categoria-del-anuncio/alquiler-de-caballos">Caballos</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1944">
-                                                <a title="Granjas"
-                                                    href="/categoria-del-anuncio/alquiler-de-granjas">Granjas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1780">
-                                                <a title="Perros" href="/categoria-del-anuncio/perros/">Perros</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1781">
-                                                <a title="Toros" href="/categoria-del-anuncio/toros/">Toros</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1779">
-                                                <a title="Otros" href="/categoria-del-anuncio/otros-animales/">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1749 dropdown ">
-                                        <a title="Transporte" href="/categoria-del-anuncio/alquiler-de-vehiculos/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Transporte <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1945">
-                                                <a title="Carros Antiguos"
-                                                    href="/categoria-del-anuncio/alquiler-de-carros-antiguos">Carros
-                                                    Antiguos</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1804">
-                                                <a title="Helicopteros"
-                                                    href="/categoria-del-anuncio/alquiler-de-helicopteros/">Helicopteros</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1946">
-                                                <a title="Cuatrimotos"
-                                                    href="/categoria-del-anuncio/alquiler-de-cuatrimotos">Cuatrimotos</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1976">
-                                                <a title="Yates Botes"
-                                                    href="/categoria-del-anuncio/alquiler-de-yates-botes">Yates
-                                                    Botes</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1974">
-                                                <a title="Limusinas"
-                                                    href="/categoria-del-anuncio/alquiler-de-limusinas">Limusinas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1803">
-                                                <a title="Bicicletas"
-                                                    href="/categoria-del-anuncio/alquiler-de-bicicletas/">Bicicletas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1802">
-                                                <a title="Aviones"
-                                                    href="/categoria-del-anuncio/alquiler-de-aviones/">Aviones</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1801">
-                                                <a title="Carros"
-                                                    href="/categoria-del-anuncio/alquiler-de-Carros">Carros</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1805">
-                                                <a title="Motos"
-                                                    href="/categoria-del-anuncio/alquiler-de-motos/">Motos</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1806">
-                                                <a title="Otros"
-                                                    href="/categoria-del-anuncio/otros-alquiler-de-vehiculos/">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1750 dropdown ">
-                                        <a title="Ropa" href="/categoria-del-anuncio/alquiler-de-ropa/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Ropa <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1798">
-                                                <a title="Uniformes"
-                                                    href="/categoria-del-anuncio/alquiler-de-uniformes/">Uniformes</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1947">
-                                                <a title="Disfraces"
-                                                    href="/categoria-del-anuncio/alquiler-de-disfraces">Disfraces</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1797">
-                                                <a title="Smoking"
-                                                    href="/categoria-del-anuncio/alquiler-de-smoking/">Smoking</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1799">
-                                                <a title="Vestidos"
-                                                    href="/categoria-del-anuncio/alquiler-de-vestidos/">Vestidos</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1800">
-                                                <a title="Otros" href="/categoria-del-anuncio/otros-ropa/">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1751 dropdown ">
-                                        <a title="Maquinaria" href="/categoria-del-anuncio/maquinaria/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Maquinaria <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1948">
-                                                <a title="Retroexcavadoras"
-                                                    href="/categoria-del-anuncio/alquiler-de-Retroexcavadoras">Retroexcavadoras</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1949">
-                                                <a title="Plantas Eléctricas"
-                                                    href="/categoria-del-anuncio/alquiler-de-Plantas-Electricas">Plantas
-                                                    Eléctricas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1795">
-                                                <a title="Montacargas"
-                                                    href="/categoria-del-anuncio/alquiler-de-montacargas/">Montacargas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1793">
-                                                <a title="Excavadoras"
-                                                    href="/categoria-del-anuncio/alquiler-de-excavadoras/">Excavadoras</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1950">
-                                                <a title="Aplanadoras"
-                                                    href="/categoria-del-anuncio/alquiler-de-Aplanadoras">Aplanadoras</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1951">
-                                                <a title="Andamios"
-                                                    href="/categoria-del-anuncio/alquiler-de-Andamios">Andamios</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1952">
-                                                <a title="Volquetas"
-                                                    href="/categoria-del-anuncio/alquiler-de-Volquetas">Volquetas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1953">
-                                                <a title="Taladros"
-                                                    href="/categoria-del-anuncio/alquiler-de-Taladros">Taladros</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1954">
-                                                <a title="Martillos"
-                                                    href="/categoria-del-anuncio/alquiler-de-Martillos">Martillos</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1794">
-                                                <a title="Gruas"
-                                                    href="/categoria-del-anuncio/alquiler-de-gruas/">Gruas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1796">
-                                                <a title="Otros"
-                                                    href="/categoria-del-anuncio/otros-maquinaria/">Otros</a></li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1752 dropdown ">
-                                        <a title="Deportes" href="/categoria-del-anuncio/deportes/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Deportes <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1783">
-                                                <a title="Elementos Deportivos"
-                                                    href="/categoria-del-anuncio/elementos-deportivos/">Elementos
-                                                    Deportivos</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1979">
-                                                <a title="Canchas de Fútbol"
-                                                    href="/categoria-del-anuncio/alquiler-canchas-de-futbol">Canchas de
-                                                    Fútbol</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1782">
-                                                <a title="Mesa de Pingpong"
-                                                    href="/categoria-del-anuncio/alquiler-mesas-de-pingpong">Mesa de
-                                                    Pingpong</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1980">
-                                                <a title="Canchas de tenis"
-                                                    href="/categoria-del-anuncio/alquiler-canchas-de-tenis">Canchas de
-                                                    tenis</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1981">
-                                                <a title="Canchas de Tejo"
-                                                    href="/categoria-del-anuncio/alquiler-canchas-de-tejo">Canchas de
-                                                    Tejo</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1982">
-                                                <a title="Otras Canchas"
-                                                    href="/categoria-del-anuncio/alquiler-de-otras-canchas">Otras
-                                                    Canchas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1784">
-                                                <a title="Otros" href="/categoria-del-anuncio/otros-deportes/">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1792 dropdown ">
-                                        <a title="Eventos" href="/categoria-del-anuncio/eventos/" data-toggle="dropdown"
-                                            class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Eventos
-                                            <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1788">
-                                                <a title="Mobiliario"
-                                                    href="/categoria-del-anuncio/mobiliario/">Mobiliario</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1786">
-                                                <a title="Inflabes"
-                                                    href="/categoria-del-anuncio/inflables/">Inflabes</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1791">
-                                                <a title="Tarimas" href="/categoria-del-anuncio/tarima/">Tarimas</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1955">
-                                                <a title="Carpas"
-                                                    href="/categoria-del-anuncio/alquiler-de-Carpas">Carpas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1790">
-                                                <a title="Sonido" href="/categoria-del-anuncio/sonido/">Sonido</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1787">
-                                                <a title="Luces" href="/categoria-del-anuncio/luces/">Luces</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1956">
-                                                <a title="Sillas"
-                                                    href="/categoria-del-anuncio/alquiler-de-sillas">Sillas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1789">
-                                                <a title="Otros" href="/categoria-del-anuncio/otros-eventos/">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1807 dropdown ">
-                                        <a title="Oficina" href="/categoria-del-anuncio/alquiler-de-equipo-de-oficina/"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Oficina <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1958">
-                                                <a title="Computadores"
-                                                    href="/categoria-del-anuncio/alquiler-de-Computadores">Computadores</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1959">
-                                                <a title="Walkie Talkies"
-                                                    href="/categoria-del-anuncio/alquiler-de-Walkie-Talkies">Walkie
-                                                    Talkies</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1960">
-                                                <a title="Video Beam"
-                                                    href="/categoria-del-anuncio/alquiler-de-Video-beam">Video Beam</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1961">
-                                                <a title="Televisores"
-                                                    href="/categoria-del-anuncio/alquiler-de-Televisores">Televisores</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1962">
-                                                <a title="Impresoras"
-                                                    href="/categoria-del-anuncio/alquiler-de-Impresoras">Impresoras</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1963">
-                                                <a title="Servidores"
-                                                    href="/categoria-del-anuncio/alquiler-de-Servidores">Servidores</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1964">
-                                                <a title="Escritorios"
-                                                    href="/categoria-del-anuncio/alquiler-de-Escritorios">Escritorios</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1965">
-                                                <a title="Teléfonos"
-                                                    href="/categoria-del-anuncio/alquiler-de-Telefonos">Teléfonos</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1966">
-                                                <a title="Tableros"
-                                                    href="/categoria-del-anuncio/alquiler-de-Tableros">Tableros</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1967">
-                                                <a title="Sillas"
-                                                    href="/categoria-del-anuncio/alquiler-de-sillas">Sillas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1968">
-                                                <a title="Otros"
-                                                    href="/categoria-del-anuncio/alquiler-de-otros-oficina">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973 dropdown ">
-                                        <a title="Publicidad" href="/categoria-del-anuncio/alquiler-de-publicidad"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Publicidad <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1969">
-                                                <a title="Carro Valla"
-                                                    href="/categoria-del-anuncio/alquiler-de-Carro-Valla">Carro
-                                                    Valla</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1970">
-                                                <a title="Moto Valla"
-                                                    href="/categoria-del-anuncio/alquiler-de-Moto-Valla">Moto Valla</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1971">
-                                                <a title="Vallas"
-                                                    href="/categoria-del-anuncio/alquiler-de-Vallas">Vallas</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972">
-                                                <a title="Otros"
-                                                    href="/categoria-del-anuncio/alquiler-de-otros-publicidad">Otros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1943 dropdown ">
-                                        <a title="Otros" href="/categoria-del-anuncio/alquiler-de-otros"
-                                            data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown"
-                                            aria-haspopup="true">Otros <i class="aficon-angle-right"></i></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1809">
-                                                <a title="Estudio de Grabación"
-                                                    href="/categoria-del-anuncio/alquiler-de-estudio-de-grabacion/">Estudio
-                                                    de Grabación</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1808">
-                                                <a title="Equipo Médico"
-                                                    href="/categoria-del-anuncio/alquiler-de-equipos-medico/">Equipo
-                                                    Médico</a></li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1978">
-                                                <a title="Hidrolavadoras"
-                                                    href="/categoria-del-anuncio/alquiler-de-hidrolavadoras">Hidrolavadoras</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1977">
-                                                <a title="Lavadoras"
-                                                    href="/categoria-del-anuncio/alquiler-de-lavadoras">Lavadoras</a>
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1753">
-                                                <a title="Otros" href="/categoria-del-anuncio/otros/">Otros</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2169"><a
                                     title="Ayuda" href="https://alquilaclic.com/ayuda/">Ayuda</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a
@@ -2603,4 +1974,3 @@ var adifier_data = {"markers_max_zoom":"5","ajaxurl":"https:\/\/alquilaclic.com\
 </body>
 
 </html>
-

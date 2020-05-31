@@ -1382,56 +1382,47 @@
                                                 data-autoplay="">
 
                                                 {{-- Anuncio  --}}
+                                                @foreach ($ultimosAnuncios as $anuncio)
                                                 <div class="af-item-wrap">
                                                     <div class="white-block hover-shadow advert-item advert-grid ">
 
                                                         <div class="advert-tags">
+                                                            @if ($anuncio->negotiable)
                                                             <div class="ribbon negotiable">
                                                                 Negociable </div>
+                                                            @endif
                                                         </div>
 
-                                                        <a href="https://alquilaclic.com/anuncios/alquilo-hermosa-camioneta/"
+                                                        <a href="{{ route('getAnuncio', $anuncio->slug) }}"
                                                             class="advert-media">
                                                         </a>
 
                                                         <div class="white-block-content">
 
                                                             <div class="top-advert-meta flex-wrap">
-                                                                <div class="advert-cat text-overflow">
-                                                                    <i class="aficon-dot-circle-o"></i>
-                                                                    <a
-                                                                        href="https://alquilaclic.com/categoria-del-anuncio/inmuebles/">Inmuebles</a>
-                                                                </div>
-                                                                <div class="advert-city text-overflow">
-                                                                    <i class="fas fa-map-marker-alt"></i>
-                                                                    Cartagena </div>
+                                                                <img width="355" height="250"
+                                                                    src="{{ asset('storage/'.$anuncio->images->first()->image_link) }}"
+                                                                    class="attachment-adifier-grid size-adifier-grid wp-post-image"
+                                                                    alt="">
                                                             </div>
                                                             <h5 class="adv-title">
-                                                                <a href="https://alquilaclic.com/anuncios/alquilo-hermosa-camioneta/"
-                                                                    class="text-overflow"
-                                                                    title="ALQUILO HERMOSA CAMIONETA">
-                                                                    ALQUILO HERMOSA CAMIONETA </a>
+                                                                <a href="{{ route('getAnuncio', $anuncio->slug) }}""
+                                                                    class=" text-overflow"
+                                                                    title="{{ $anuncio->title }}">
+                                                                    {{ $anuncio->title }} </a>
                                                             </h5>
                                                             <div class="bottom-advert-meta flex-wrap">
                                                                 <div class="price"><span
-                                                                        class="price-symbol">$</span>10,000<span
-                                                                        class="no-strike">/ Hora</span></div>
+                                                                        class="price-symbol">$</span>{{ $anuncio->cost }}
+                                                                    {{ $anuncio->currency }}<span class="no-strike">/
+                                                                        {{ $anuncio->period }}</span></div>
                                                                 <div class="flex-right">
-
-                                                                    <a title="Favoritos" href="javascript:void(0);"
-                                                                        class="process-favorites" data-id="2221">
-                                                                        <i class="aficon-heart-o"></i>
-                                                                        <span>Favoritos</span>
-                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
-
-                                                        <div class="search-map-la-long hidden" data-id="2221"
-                                                            data-longitude="-75.47781304" data-latitude="10.39276338"
-                                                            data-icon="" data-iconwidth="" data-iconheight=""></div>
                                                     </div>
                                                 </div>
+                                                @endforeach
                                             </div>
                                             </>
                                         </div>

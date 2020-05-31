@@ -26,7 +26,7 @@ class GoogleController extends Controller
                 'lastname' => $user->getName(),
                 'mothersLastname' => $user->getName(),
                 'password' => bcrypt(Str::random(20)),
-                'phone' => 'Inserte su número telefónico'
+                'phone' => 'Sin número telefónico registrado'
             ]
         );
 

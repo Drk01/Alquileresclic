@@ -10,11 +10,6 @@ use Illuminate\Support\Str;
 
 class FacebookController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
-
     public function redirectToProvider()
     {
         return Socialite::driver('facebook')->redirect();
@@ -22,20 +17,26 @@ class FacebookController extends Controller
 
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('facebook')->user();
+        try {
+            $user = Socialite::driver('facebook')->user();
+            
+            $user = User::firstOrCreate(
+                ['name' => $user->getName()],
+                [
+                    'name' => $user->getName(),
+                    'lastname' => $user->getName(),
+                    'mothersLastname' => $user->getName(),
+                    'password' => bcrypt(Str::random(20)),
+                    'phone' => 'Sin número telefónico registrado',
+                    'email' => 'Sin correo electrónico registrado'
+                ]
+            );
 
-        $user = User::firstOrCreate(
-            ['email' => $user->getEmail()],
-            [
-                'name' => $user->getName(),
-                'lastname' => $user->getName(),
-                'mothersLastname' => $user->getName(),
-                'password' => bcrypt(Str::random(20))
-            ]
-        );
+            Auth::login($user, true);
 
-        Auth::login($user, true);
-
-        return redirect(route('home'));
+            return redirect(route('home'));
+        } catch (\Throwable $th) {
+            dd($th);
+        }
     }
 }

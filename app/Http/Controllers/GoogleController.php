@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -24,7 +25,8 @@ class GoogleController extends Controller
                 'name' => $user->getName(),
                 'lastname' => $user->getName(),
                 'mothersLastname' => $user->getName(),
-                'password' => bcrypt(Str::random(20))
+                'password' => bcrypt(Str::random(20)),
+                'phone' => 'Inserte su número telefónico'
             ]
         );
 

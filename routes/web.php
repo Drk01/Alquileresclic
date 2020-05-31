@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'FrontEndController@getIndex');
 
+Route::get('/anuncio/{slug}', 'FrontEndController@getAnuncio')->name('getAnuncio');
+
 Auth::routes(['verify' => true]);
 
 

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Ad;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class FrontEndController extends Controller
 {
@@ -14,5 +16,11 @@ class FrontEndController extends Controller
             'ultimosAnuncios' => $ultimosAnuncios
         ]);
     }
+
+    public function getAnuncio($slug)
+    {
+        return view('showAd', [
+            'anuncio' => Ad::where('slug', $slug)->get()
+        ]);
     }
 }

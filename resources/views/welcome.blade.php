@@ -799,6 +799,9 @@
             }
         }
     </style>
+
+    //Importando iconos de FontAwesome
+    <script src="https://use.fontawesome.com/e31326b11b.js"></script>
 </head>
 
 <body data-rsssl=1

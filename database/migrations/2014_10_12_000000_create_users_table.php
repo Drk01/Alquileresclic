@@ -3,6 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
+
 
 class CreateUsersTable extends Migration
 {
@@ -25,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->integer('role')->default(0);
             $table->boolean('confianza')->default(false);
             $table->boolean('block')->default(false);
-            $table->string('api_token');
+            $table->string('api_token')->default(Str::random(60));
             $table->string('phone');
             $table->timestamps();
         });

@@ -52,19 +52,19 @@ Route::group(['prefix' => 'panel'], function () {
         Route::post('/savePassword', 'ProfileController@savePassword')->name('savePassword');
     });
 
-    Route::group(['prefix' => 'facebook'], function () {
-        Route::get('sign-in', 'FacebookController@redirectToProvider')->name('facebookRedirectToProvider');
-
-        Route::get('sign-in/redirect', 'FacebookController@handleProviderCallback')->name('facebookHandleProviderCallback');
-    });
-
-    Route::group(['prefix' => 'google'], function () {
-        Route::get('sign-in', 'GoogleController@redirectToProvider')->name('googleRedirectToProvider');
-
-        Route::get('sign-in/redirect', 'GoogleController@handleProviderCallback')->name('googleHandleProviderCallback');
-    });
-
     Route::group(['prefix' => 'packages'], function () {
         Route::get('', 'PackageController@showPackageOptions')->name('showPackageOptions');
     });
+});
+
+Route::group(['prefix' => 'facebook'], function () {
+    Route::get('sign-in', 'FacebookController@redirectToProvider')->name('facebookRedirectToProvider');
+
+    Route::get('sign-in/redirect', 'FacebookController@handleProviderCallback')->name('facebookHandleProviderCallback');
+});
+
+Route::group(['prefix' => 'google'], function () {
+    Route::get('sign-in', 'GoogleController@redirectToProvider')->name('googleRedirectToProvider');
+
+    Route::get('sign-in/redirect', 'GoogleController@handleProviderCallback')->name('googleHandleProviderCallback');
 });

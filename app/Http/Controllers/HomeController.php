@@ -51,7 +51,11 @@ class HomeController extends Controller
             $sumatoria += $key->score;
         }
 
-        $promedio = $sumatoria / $cantidadAnuncios;
+        if ($cantidadAnuncios != 0 && $sumatoria != 0) {
+            $promedio = $sumatoria / $cantidadAnuncios;
+        } else {
+            $promedio = 0;
+        }
 
         return view('home', [
             'remainingAds' => $remainingAds,

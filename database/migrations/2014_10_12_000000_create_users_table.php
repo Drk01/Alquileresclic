@@ -22,8 +22,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->string('lastname');
-            $table->string('mothersLastname');
+            $table->string('lastnames');
             $table->integer('role')->default(0);
             $table->boolean('confianza')->default(false);
             $table->boolean('block')->default(false);

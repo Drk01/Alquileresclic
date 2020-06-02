@@ -40,49 +40,22 @@
                             <label
                                 for="lastname"
                                 class="col-md-4 col-form-label text-md-right"
-                                >Apellido paterno</label
+                                >Apellidos</label
                             >
 
                             <div class="col-md-6">
                                 <input
-                                    id="lastname"
+                                    id="lastnames"
                                     type="text"
-                                    class="form-control @error('lastname') is-invalid @enderror"
-                                    name="lastname"
-                                    value="{{ old('lastname') }}"
+                                    class="form-control @error('lastnames') is-invalid @enderror"
+                                    name="lastnames"
+                                    value="{{ old('lastnames') }}"
                                     required
                                     autocomplete
                                     autofocus
                                 />
 
-                                @error('lastname')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label
-                                for="motherLastname"
-                                class="col-md-4 col-form-label text-md-right"
-                                >Apellido materno</label
-                            >
-
-                            <div class="col-md-6">
-                                <input
-                                    id="motherLastname"
-                                    type="text"
-                                    class="form-control @error('motherLastname') is-invalid @enderror"
-                                    name="motherLastname"
-                                    value="{{ old('motherLastname') }}"
-                                    required
-                                    autocomplete
-                                    autofocus
-                                />
-
-                                @error('motherLastname')
+                                @error('lastnames')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

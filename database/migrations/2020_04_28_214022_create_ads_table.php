@@ -17,7 +17,7 @@ class CreateAdsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('cost');
-            $table->enum('currency', ['USD', 'CO']);
+            $table->enum('currency', ['USD', 'COP']);
             $table->enum('period', ['Hora', 'Día', 'Semanal', 'Mensual']);
             $table->longText('description');
             $table->string('code');

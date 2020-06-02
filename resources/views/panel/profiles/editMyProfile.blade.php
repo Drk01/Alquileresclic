@@ -10,14 +10,9 @@
             <input required type="text" name="name" id="name" class="form-control" value="{{ auth()->user()->name }}" />
         </div>
         <div class="form-group">
-            <label for="lastname">Apellido paterno: </label>
+            <label for="lastname">Apellidos: </label>
             <input required type="text" name="lastname" id="lastname" class="form-control"
-                value="{{ auth()->user()->lastname }}" />
-        </div>
-        <div class="form-group">
-            <label for="mothersLastname">Apellido materno: </label>
-            <input type="text" name="mothersLastname" id="mothersLastname" class="form-control"
-                value="{{ auth()->user()->mothersLastname }}" />
+                value="{{ auth()->user()->lastnames }}" />
         </div>
         <div class="form-group">
             <label for="email">Email: </label>

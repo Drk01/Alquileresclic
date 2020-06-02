@@ -17,8 +17,8 @@ class hasCreatedProfile
     {
         if (isset($request->user()->profile)) {
             return $next($request);
-        }else{
-            return redirect(route('home'))->with('dangerMessage', 'Por cree su perfíl antes de continuar');
+        } else {
+            return redirect(route('home'))->with('dangerMessage', 'Por favor cree su perfíl antes de continuar');
         }
     }
 }

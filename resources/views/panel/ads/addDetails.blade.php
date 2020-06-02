@@ -32,7 +32,7 @@
                     <label for="currency">Divisa: </label>
                     <select required name="currency" id="currency" class="form-control">
                         <option value="USD">USD</option>
-                        <option value="COL">COL</option>
+                        <option value="COP">COP</option>
                     </select>
                 </div>
                 <div class="col">

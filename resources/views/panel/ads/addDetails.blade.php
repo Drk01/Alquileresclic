@@ -66,7 +66,7 @@
 
                     <input required type="text" id="category" value="{{ $category->id }}" name="category" hidden />
                     <button type="submit" class="btn btn-success btn-lg float-right mt-3">
-                        Enviar a moderación
+                        Publicar
                     </button>
         </form>
     </div>

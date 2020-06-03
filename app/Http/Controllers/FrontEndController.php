@@ -20,7 +20,7 @@ class FrontEndController extends Controller
     public function getAnuncio($slug)
     {
         return view('showAd', [
-            'anuncio' => Ad::where('slug', $slug)->get()
+            'anuncio' => Ad::where('slug', $slug)->first()
         ]);
     }
 }

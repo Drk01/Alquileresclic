@@ -31,7 +31,7 @@
                                 <select name="currency" class="form-control" id="currency">
                                     <option selected disabled hidden value="{{ $ad->currency }}">{{ $ad->currency }}</option>
                                     <option value="USD">USD</option>
-                                    <option value="CO">CO</option>
+                                    <option value="COP">COP</option>
                                 </select>
                             </div>
                             <div class="form-group">

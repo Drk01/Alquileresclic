@@ -95,7 +95,7 @@ class AdController extends Controller
             $usuario->remaining_ads = $usuario->remaining_ads - 1;
             $usuario->save();
 
-            return redirect(route('home'))->with('message',  'Su anuncio ha sido enviado a moderación');
+            return redirect(route('home'))->with('message',  'Su anuncio está en revisión, en breve será publicado');
         } catch (\Throwable $th) {
             return response($th);
         }

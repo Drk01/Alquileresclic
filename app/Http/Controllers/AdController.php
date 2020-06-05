@@ -67,7 +67,6 @@ class AdController extends Controller
             $anuncio->cost = $request->cost;
             $anuncio->currency = $request->currency;
             $anuncio->period = $request->period;
-            $anuncio->slug = Str::slug($request->title, '-');
 
             if ($request->negotiable === "Si") {
                 $anuncio->negotiable = true;

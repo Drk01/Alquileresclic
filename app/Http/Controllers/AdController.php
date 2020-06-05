@@ -83,8 +83,8 @@ class AdController extends Controller
             // Salvar las imágenes del anuncio.
 
             foreach ($request->images as $image) {
-                $path =  $image->store('ads');
-                Storage::setVisibility($path, 'public');
+                $path = Storage::disk('public')->put($image, $image, 'public');
+
                 $image = new Image([
                     'image_link' => $path
                 ]);

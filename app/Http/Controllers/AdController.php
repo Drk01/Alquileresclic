@@ -75,7 +75,7 @@ class AdController extends Controller
                 $anuncio->negotiable = false;
             }
 
-            $anuncio->code = Str::random(6);
+            $anuncio->code = Str::random(3) . rand(0, 999);
             $anuncio->profile_id = $usuario->profile()->first()->id;
             $anuncio->save();
 

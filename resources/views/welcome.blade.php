@@ -805,8 +805,7 @@
                 <div class="dark-logo-wrap">
                 </div>
                 <div class="show-on-414">
-                    <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/?screen=new"
-                        class="submit-btn-wrap submit-btn ">
+                    <a href="{{ route('login') }}" class="submit-btn-wrap submit-btn ">
                         <i class="aficon-add-ad"></i>
                         <span>Publica YA</span>
                     </a> </div>

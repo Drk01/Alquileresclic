@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Alquilo Hermosas Bicicletas - Alquilaclic.com</title>
+    <title>{{ $anuncio->title }} - Alquilaclic.com</title>
 
     <!-- This site is optimized with the Yoast SEO Premium plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
     <link rel="canonical" href="https://alquilaclic.com/anuncios/alquilo-hermosas-bicicletas/" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Alquilo Hermosas Bicicletas - Alquilaclic.com" />
-    <meta property="og:description" content="Hermosas Bicicletas en Villa de Leyva cómodos precios." />
+    <meta property="og:title" content="{{ $anuncio->title }} - Alquilaclic.com" />
+    <meta property="og:description" content="{{ $anuncio->description }}" />
     <meta property="og:url" content="https://alquilaclic.com/anuncios/alquilo-hermosas-bicicletas/" />
     <meta property="og:site_name" content="Alquilaclic.com" />
     <meta property="og:image"
@@ -248,7 +248,7 @@
         .user-details-list a:active,
         .user-details-list a:focus,
         .element-categories-v-list a:hover h5 {
-            color: #00a591;
+            color: #f92935;
         }
 
         @media (max-width: 1024px) {
@@ -257,7 +257,7 @@
             .special-nav a,
             .special-nav a:focus,
             .special-nav a:active {
-                color: #00a591;
+                color: #f92935;
             }
         }
 
@@ -277,16 +277,16 @@
         textarea:focus,
         select:focus,
         .select2-container--open.select2-container--default .select2-selection--single {
-            border-color: #00a591;
+            border-color: #f92935;
         }
 
         .rtl .conversation-wrap.current,
         .rtl .conversation-wrap:hover {
-            border-right-color: #00a591;
+            border-right-color: #f92935;
         }
 
         .author-sidebar li.active {
-            border-left-color: #00a591;
+            border-left-color: #f92935;
         }
 
         .scroll-element .scroll-element_track,
@@ -295,7 +295,7 @@
         .pagination>span:not(.dots),
         .pagination a.current,
         .af-interactive-slider a {
-            background-color: #00a591;
+            background-color: #f92935;
         }
 
         .af-button,
@@ -318,7 +318,7 @@
         .profile-advert .action a:nth-child(1):hover,
         .profile-advert .action a:nth-child(4):hover,
         .status.live {
-            background: #00a591;
+            background: #f92935;
         }
 
         @media (min-width: 1025px) {
@@ -326,7 +326,7 @@
             .submit-btn,
             .submit-btn:focus,
             .submit-btn:active {
-                background: #00a591;
+                background: #f92935;
                 color: #ffffff;
             }
 
@@ -341,7 +341,7 @@
             .submit-btn,
             .submit-btn:focus,
             .submit-btn:active {
-                color: #00a591;
+                color: #f92935;
             }
         }
 
@@ -479,7 +479,7 @@
         }
 
         .active-price-table .price-table-price {
-            background: #00a591;
+            background: #f92935;
             color: #ffffff;
         }
 
@@ -491,7 +491,7 @@
         .active-price-table.price-table-element .af-button:focus,
         .active-price-table.price-table-element .af-button:active,
         .active-price-table.price-table-element .af-button {
-            background: #00a591;
+            background: #f92935;
             color: #ffffff;
         }
 
@@ -743,8 +743,7 @@
                 <div class="dark-logo-wrap">
                 </div>
                 <div class="show-on-414">
-                    <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/?screen=new"
-                        class="submit-btn-wrap submit-btn ">
+                    <a href="{{ route('login') }}" class="submit-btn-wrap submit-btn ">
                         <i class="aficon-add-ad"></i>
                         <span>Publica YA</span>
                     </a> </div>
@@ -1243,7 +1242,7 @@
                                 Negociable </div>
                         </div>
                     </div>
-                    <div class="single-advert-media">
+                    {{-- <div class="single-advert-media">
                         <div class="owl-carousel single-slider"><a
                                 href="https://alquilaclic.com/wp-content/uploads/2019/10/20191020_201228_edited.jpg?v=1571621098"
                                 class="single-slider-href"><img width="750" height="450"
@@ -1266,7 +1265,7 @@
                                     srcset="https://alquilaclic.com/wp-content/uploads/2019/10/20191020_201043_edited-150x150.jpg?v=1571621097 150w, https://alquilaclic.com/wp-content/uploads/2019/10/20191020_201043_edited-70x70.jpg?v=1571621097 70w"
                                     sizes="(max-width: 150px) 100vw, 150px" /></div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="hide-price-big">
 
                         <div class="single-price-wrap">
@@ -1283,9 +1282,9 @@
 
                     <div class="white-block">
                         <div class="white-block-content">
-                            <h1 class="blog-item-title h4-size">Alquilo Hermosas Bicicletas</h1>
+                            <h1 class="blog-item-title h4-size">{{ $anuncio->title }}</h1>
                             <div class="post-content clearfix">
-                                <p>Hermosas Bicicletas en Villa de Leyva cómodos precios.</p>
+                                <p>{{ $anuncio->description }}</p>
                             </div>
                             <ul class="list-inline list-unstyled single-meta top-advert-meta">
                                 <li>
@@ -2151,7 +2150,7 @@
 
     <script type='text/javascript'>
         /* <![CDATA[ */
-var adifier_data = {"markers_max_zoom":"5","ajaxurl":"https:\/\/alquilaclic.com\/wp-admin\/admin-ajax.php","enable_sticky":"no","marker_icon":"","payment_enviroment":"live","max_videos":"1","max_images":"5","max_image_size":"4","url":"https:\/\/alquilaclic.com\/wp-content\/themes\/alquilaclic377\/images\/","map_style":"","map_language":"es","country_restriction":"CO","main_color":"#00a591","address_order":"front"};
+var adifier_data = {"markers_max_zoom":"5","ajaxurl":"https:\/\/alquilaclic.com\/wp-admin\/admin-ajax.php","enable_sticky":"no","marker_icon":"","payment_enviroment":"live","max_videos":"1","max_images":"5","max_image_size":"4","url":"https:\/\/alquilaclic.com\/wp-content\/themes\/alquilaclic377\/images\/","map_style":"","map_language":"es","country_restriction":"CO","main_color":"#f92935","address_order":"front"};
 /* ]]> */
     </script>
     <script type='text/javascript'

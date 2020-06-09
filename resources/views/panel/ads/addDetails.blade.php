@@ -93,11 +93,8 @@
         });
 
         $('#termsYconditions').on('change', function () {
-            console.log('Hola mundo');
-
             if (document.getElementById('termsYconditions').checked) {
                 $('#btn-publicar').removeAttr('disabled');
-                console.log('Hola mundo');
             }else{
                 $('#btn-publicar').attr('disabled', true);
             }

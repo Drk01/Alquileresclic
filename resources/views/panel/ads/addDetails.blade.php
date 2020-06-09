@@ -65,7 +65,14 @@
                         accept="image/jpg, image/jpeg, image/png" />
 
                     <input required type="text" id="category" value="{{ $category->id }}" name="category" hidden />
-                    <button type="submit" class="btn btn-success btn-lg float-right mt-3">
+
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="termsYconditions" name="termsYconditions">
+                        <label class="form-check-label" for="termsYconditions">
+                            Acepto términos y condiciones de uso
+                        </label>
+                    </div>
+                    <button type="submit" id="btn-publicar" disabled class="btn btn-success btn-lg float-right mt-3">
                         Publicar
                     </button>
         </form>
@@ -84,6 +91,18 @@
                 images.val("");
             }
         });
+
+        $('#termsYconditions').on('change', function () {
+            console.log('Hola mundo');
+
+            if (document.getElementById('termsYconditions').checked) {
+                $('#btn-publicar').removeAttr('disabled');
+                console.log('Hola mundo');
+            }else{
+                $('#btn-publicar').attr('disabled', true);
+            }
+        });
+
     };
 </script>
 @endsection

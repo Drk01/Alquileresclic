@@ -224,7 +224,7 @@
         .user-details-list a:active,
         .user-details-list a:focus,
         .element-categories-v-list a:hover h5 {
-            color: #00a591;
+            color: #f92935;
         }
 
         @media (max-width: 1024px) {
@@ -233,7 +233,7 @@
             .special-nav a,
             .special-nav a:focus,
             .special-nav a:active {
-                color: #00a591;
+                color: #f92935;
             }
         }
 
@@ -253,16 +253,16 @@
         textarea:focus,
         select:focus,
         .select2-container--open.select2-container--default .select2-selection--single {
-            border-color: #00a591;
+            border-color: #f92935;
         }
 
         .rtl .conversation-wrap.current,
         .rtl .conversation-wrap:hover {
-            border-right-color: #00a591;
+            border-right-color: #f92935;
         }
 
         .author-sidebar li.active {
-            border-left-color: #00a591;
+            border-left-color: #f92935;
         }
 
         .scroll-element .scroll-element_track,
@@ -271,7 +271,7 @@
         .pagination>span:not(.dots),
         .pagination a.current,
         .af-interactive-slider a {
-            background-color: #00a591;
+            background-color: #f92935;
         }
 
         .af-button,
@@ -294,7 +294,7 @@
         .profile-advert .action a:nth-child(1):hover,
         .profile-advert .action a:nth-child(4):hover,
         .status.live {
-            background: #00a591;
+            background: #f92935;
         }
 
         @media (min-width: 1025px) {
@@ -302,12 +302,12 @@
             .submit-btn,
             .submit-btn:focus,
             .submit-btn:active {
-                background: #00a591;
+                background: #f92935;
                 color: #ffffff;
             }
 
             .submit-btn:hover {
-                background: #008c77;
+                background: #f92100;
                 color: #ffffff;
             }
         }
@@ -317,7 +317,7 @@
             .submit-btn,
             .submit-btn:focus,
             .submit-btn:active {
-                color: #00a591;
+                color: #f92935;
             }
         }
 
@@ -455,7 +455,7 @@
         }
 
         .active-price-table .price-table-price {
-            background: #00a591;
+            background: #f92935;
             color: #ffffff;
         }
 
@@ -467,7 +467,7 @@
         .active-price-table.price-table-element .af-button:focus,
         .active-price-table.price-table-element .af-button:active,
         .active-price-table.price-table-element .af-button {
-            background: #00a591;
+            background: #f92935;
             color: #ffffff;
         }
 
@@ -1709,39 +1709,39 @@
                             <div class="kc-elm kc-css-248280" style="height: 25px; clear: both; width:100%;"></div>
                             <div class="hiw-wrapper hiw-wrapper-3 flex-wrap flex-start-v">
                                 <div class="hiw-item service hiw-1590897732">
-                                    <div class="service-icon animation" style="background: #00a591; color: #ffffff"><i
+                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><i
                                             class="fas fa-user"></i></div>
                                     <div class="service-content">
                                         <h5>Crea una cuenta</h5>
                                         <p>Crear una cuenta es muy fácil y lo puedes hacer con tu red social</p>
                                         <div class="hiw-item-style hidden">
                                             .hiw-1590897732:hover .service-icon{
-                                            color:#00a591!important;
+                                            color:#f92935!important;
                                             background:#ffffff!important;
                                             }
                                             .hiw-1590897732.hiw-item:before{
-                                            border-color:#00a591!important;
+                                            border-color:#f92935!important;
                                             } </div>
                                     </div>
                                 </div>
                                 <div class="hiw-item service hiw-1590897732">
-                                    <div class="service-icon animation" style="background: #00a591; color: #ffffff"><i
+                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><i
                                             class="far fa-bell"></i></div>
                                     <div class="service-content">
                                         <h5>Crea Tu Anuncio Gratis </h5>
                                         <p>Puedes Publicar anuncios totalmente gratis por tiempo ilimitado</p>
                                         <div class="hiw-item-style hidden">
                                             .hiw-1590897732:hover .service-icon{
-                                            color:#00a591!important;
+                                            color:#f92935!important;
                                             background:#ffffff!important;
                                             }
                                             .hiw-1590897732.hiw-item:before{
-                                            border-color:#00a591!important;
+                                            border-color:#f92935!important;
                                             } </div>
                                     </div>
                                 </div>
                                 <div class="hiw-item service hiw-1590897732">
-                                    <div class="service-icon animation" style="background: #00a591; color: #ffffff"><i
+                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><i
                                             class="fas fa-gem"></i>
                                     </div>
                                     <div class="service-content">
@@ -1749,11 +1749,11 @@
                                         <p>Espera a que te contacten para alquilar </p>
                                         <div class="hiw-item-style hidden">
                                             .hiw-1590897732:hover .service-icon{
-                                            color:#00a591!important;
+                                            color:#f92935!important;
                                             background:#ffffff!important;
                                             }
                                             .hiw-1590897732.hiw-item:before{
-                                            border-color:#00a591!important;
+                                            border-color:#f92935!important;
                                             } </div>
                                     </div>
                                 </div>
@@ -1925,7 +1925,7 @@
 
     <script type='text/javascript'>
         /* <![CDATA[ */
-var adifier_data = {"markers_max_zoom":"5","ajaxurl":"https:\/\/alquilaclic.com\/wp-admin\/admin-ajax.php","enable_sticky":"no","marker_icon":"","payment_enviroment":"live","max_videos":"1","max_images":"5","max_image_size":"4","url":"https:\/\/alquilaclic.com\/wp-content\/themes\/alquilaclic377\/images\/","map_style":"","map_language":"es","country_restriction":"CO","main_color":"#00a591","address_order":"front"};
+var adifier_data = {"markers_max_zoom":"5","ajaxurl":"https:\/\/alquilaclic.com\/wp-admin\/admin-ajax.php","enable_sticky":"no","marker_icon":"","payment_enviroment":"live","max_videos":"1","max_images":"5","max_image_size":"4","url":"https:\/\/alquilaclic.com\/wp-content\/themes\/alquilaclic377\/images\/","map_style":"","map_language":"es","country_restriction":"CO","main_color":"#f92935","address_order":"front"};
 /* ]]> */
     </script>
     <script type='text/javascript'

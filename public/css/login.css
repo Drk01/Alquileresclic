@@ -1,0 +1,59 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.register-box {
+    margin-top: 10%;
+    background-color: #e1dddd;
+    border-radius: 2em;
+    padding: 5% 5%;
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.registerTitle {
+    color: #f92935;
+    font-weight: bolder;
+    font-size: 25px;
+    font
+}
+
+.login-box{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.login-title{
+    margin-top: 20%;
+}
+
+label{
+    font-size: medium;
+}
+
+input[type=checkbox]{
+-webkit-transform: scale(2);
+}
+
+.checkboxes-div{
+    margin-left: 40%;
+}
+
+.submitbutton{
+margin-left: 50%;
+}
+
+.socialLoginLink{
+    color: white;
+}
+
+.FacebookButton{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.GoogleButton{
+    margin-top: 1%;
+    margin-left: 20%;
+}

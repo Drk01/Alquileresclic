@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -123,6 +124,16 @@
                         <div class="form-check">
                             <input type="checkbox" name="remember" id="remember" class="form-check-input">
                             <label for="remember" class="form-check-label">Recuérdame</label>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col offset-2">
+                                <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_SITE_KEY') }}"></div>
+                                @if ($errors->has('g-recaptcha-response'))
+                                <span class="invalid-feedback" style="display: block;">
+                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                </span>
+                                @endif
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-danger btn-lg float-right">Acceder</button>
                     </form>

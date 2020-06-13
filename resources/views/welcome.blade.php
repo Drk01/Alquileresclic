@@ -15,43 +15,26 @@
     <meta property="og:site_name" content="Alquilaclic.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="alquila fácil :::: alquilaclic.com - Alquilaclic.com" />
-    <meta name="twitter:image" content="https://alquilaclic.com/wp-content/uploads/2018/11/slide1.jpg" />
-    <script type='application/ld+json'>
-        {"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/alquilaclic.com\/","name":"Alquilaclic.com","potentialAction":{"@type":"SearchAction","target":"https:\/\/alquilaclic.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}
-    </script>
-    <script type='application/ld+json'>
-        {"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/alquilaclic.com\/","sameAs":[],"@id":"https:\/\/alquilaclic.com\/#organization","name":"ALQUILAYA.CO","logo":""}
-    </script>
-    <!-- / Yoast SEO Premium plugin. -->
+    <meta name="twitter:image" content="{{ asset('img/Imagén Banner Alquilaclic.png') }}" />
 
     <link rel='dns-prefetch' href='//maps.googleapis.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
-    <link rel="alternate" type="application/rss+xml" title="Alquilaclic.com &raquo; Feed"
+    <link rel=" alternate" type="application/rss+xml" title="Alquilaclic.com &raquo; Feed"
         href="https://alquilaclic.com/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Alquilaclic.com &raquo; RSS de los comentarios"
-        href="https://alquilaclic.com/comments/feed/" />
-    <link rel='stylesheet' id='wp-block-library-css'
-        href='https://alquilaclic.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1.5' type='text/css'
+    <link rel='stylesheet' id='wp-block-library-css' href='{{  asset('css/style.min.css') }}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='bootstrap-css'
-        href='https://alquilaclic.com/wp-content/themes/alquilaclic377/css/bootstrap.min.css?ver=5.1.5' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='adifier-icons-css'
-        href='https://alquilaclic.com/wp-content/themes/alquilaclic377/css/adifier-icons.css?ver=5.1.5' type='text/css'
+    <link rel='stylesheet' id='bootstrap-css' href='{{ asset('css/bootstrap.min.css') }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='adifier-icons-css' href='{{ asset('css/adifier-icons.css') }}' type='text/css'
         media='all' />
     <link rel='stylesheet' id='adifier-fonts-css'
         href='//fonts.googleapis.com/css?family=Open+Sans%3A700%2C600%2C700%7CQuicksand%3A700%2C400%2C500%26subset%3Dall&#038;ver=1.0.0'
         type='text/css' media='all' />
-    <link rel='stylesheet' id='owl-carousel-css'
-        href='https://alquilaclic.com/wp-content/themes/alquilaclic377/css/owl.carousel.min.css?ver=5.1.5'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='magnific-popup-css'
-        href='https://alquilaclic.com/wp-content/themes/alquilaclic377/css/magnific-popup.css?ver=5.1.5' type='text/css'
+    <link rel='stylesheet' id='owl-carousel-css' href='{{ asset('css/owl.carousel.min.css') }}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='adifier-style-css'
-        href='https://alquilaclic.com/wp-content/themes/alquilaclic377/style.css?ver=5.1.5' type='text/css'
+    <link rel='stylesheet' id='magnific-popup-css' href='{{ asset('css/magnific-popup.css') }}' type='text/css'
         media='all' />
+    <link rel='stylesheet' id='adifier-style-css' href='{{ asset('css/style.css') }}' type='text/css' media='all' />
     <style id='adifier-style-inline-css' type='text/css'>
         body {
             font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -642,39 +625,15 @@
             }
         }
     </style>
-    <link rel='stylesheet' id='kc-general-css'
-        href='https://alquilaclic.com/wp-content/plugins/kingcomposer/assets/frontend/css/kingcomposer.min.css?ver=2.8.2'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='kc-animate-css'
-        href='https://alquilaclic.com/wp-content/plugins/kingcomposer/assets/css/animate.css?ver=2.8.2' type='text/css'
+    <link rel='stylesheet' id='kc-general-css' href='{{ asset('css/kingcomposer.min.css') }}' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='kc-icon-1-css'
-        href='https://alquilaclic.com/wp-content/plugins/kingcomposer/assets/css/icons.css?ver=2.8.2' type='text/css'
+    <link rel='stylesheet' id='kc-animate-css' href='{{ asset('css/kingcomposerAnimate.css') }}' type='text/css'
         media='all' />
-    <script type='text/javascript' src='https://alquilaclic.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-    <script type='text/javascript' src='https://alquilaclic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'>
-    </script>
-    <link rel='https://api.w.org/' href='https://alquilaclic.com/wp-json/' />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://alquilaclic.com/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-        href="https://alquilaclic.com/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 5.1.5" />
+    <link rel='stylesheet' id='kc-icon-1-css' href='{{ asset('css/kingcomposerIcons.css') }}' type='text/css'
+        media='all' />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel='shortlink' href='https://alquilaclic.com/' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://alquilaclic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falquilaclic.com%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://alquilaclic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falquilaclic.com%2F&#038;format=xml" />
-    <script type="text/javascript">
-        var kc_script_data={ajax_url:"https://alquilaclic.com/wp-admin/admin-ajax.php"}
-    </script><!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104361969-7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-104361969-7');
-    </script>
     <style type="text/css">
         .recentcomments a {
             display: inline !important;
@@ -682,14 +641,10 @@
             margin: 0 !important;
         }
     </style>
-    <link rel="icon" href="https://alquilaclic.com/wp-content/uploads/2019/01/cropped-favicon-32x32.png"
-        sizes="32x32" />
-    <link rel="icon" href="https://alquilaclic.com/wp-content/uploads/2019/01/cropped-favicon-192x192.png"
-        sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed"
-        href="https://alquilaclic.com/wp-content/uploads/2019/01/cropped-favicon-180x180.png" />
-    <meta name="msapplication-TileImage"
-        content="https://alquilaclic.com/wp-content/uploads/2019/01/cropped-favicon-270x270.png" />
+    <link rel="icon" href="{{ asset('img/icons/cropped-favicon-32x32.png') }}" sizes="32x32" />
+    <link rel="icon" href="{{ asset('img/icons/cropped-favicon-192x192.png') }}" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('img/icons/cropped-favicon-180x180.png') }}" />
+    <meta name="msapplication-TileImage" content="{{ asset('img/icons/cropped-favicon-270x270.png') }}" />
     <style type="text/css" id="wp-custom-css">
         .col-sm-7 {
             width: 99.33333333%;
@@ -799,8 +754,7 @@
                         <i class="fa aficon-align-justify"></i>
                     </a> </div>
                 <a href="https://alquilaclic.com/" class="logo">
-                    <img src="https://alquilaclic.com/wp-content/uploads/2020/05/Logo-AlquilaClicbbb.png" alt="logo"
-                        width="295" height="55" />
+                    <img src="{{ asset('img/Logo-AlquilaClicbbb.png') }}" alt="logo" width="295" height="55" />
                 </a>
                 <div class="dark-logo-wrap">
                 </div>
@@ -1276,18 +1230,15 @@
                         data-target=".search-sidebar">
                         <i class="aficon-search"></i>
                     </a>
-                    <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/" class="account-btn header-user-icon"
-                        title="Tu Cuenta">
+                    <a href="#" class="account-btn header-user-icon" title="Tu Cuenta">
                         <i class="fas fa-user"></i>
                     </a>
-                    <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/?screen=messages"
-                        class="account-btn header-messages-icon" title="Mensajes">
+                    <a href="#" class="account-btn header-messages-icon" title="Mensajes">
                         <i class="fas fa-envelope-open"></i>
                         <div class="messages-unread-count"></div>
                     </a>
 
-                    <a href="https://alquilaclic.com/inmob/omarcmonrroygmail-com/?screen=new"
-                        class="submit-btn-wrap submit-btn ">
+                    <a href="{{ route('login') }}" class="submit-btn-wrap submit-btn ">
                         <i class="fas fa-ad"></i>
                         <span>Publica YA</span>
                     </a> <a href="javascript:void(0);" class="small-sidebar-open navigation-trigger"
@@ -1922,32 +1873,19 @@
         </div>
     </div>
 
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-var adifier_data = {"markers_max_zoom":"5","ajaxurl":"https:\/\/alquilaclic.com\/wp-admin\/admin-ajax.php","enable_sticky":"no","marker_icon":"","payment_enviroment":"live","max_videos":"1","max_images":"5","max_image_size":"4","url":"https:\/\/alquilaclic.com\/wp-content\/themes\/alquilaclic377\/images\/","map_style":"","map_language":"es","country_restriction":"CO","main_color":"#f92935","address_order":"front"};
-/* ]]> */
-    </script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/bootstrap.min.js?ver=5.1.5'></script>
+    <script type='text/javascript' src='{{ asset('js/theme/bootstrap.min.js') }}'></script>
     <script type='text/javascript'
         src='//maps.googleapis.com/maps/api/js?libraries=places&#038;v=3&#038;key=AIzaSyA50m5G-WCm7BrcFzRkei6unq_UN8idGRo&#038;language=es&#038;ver=5.1.5'>
     </script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/profile/jquery.scrollbar.min.js?ver=5.1.5'>
+    <script type='text/javascript' src='{{ asset('js/theme/jquery.scrollbar.min.js') }}'>
     </script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/search/infobox.js?ver=5.1.5'></script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/search/infobox-extend.js?ver=5.1.5'></script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/search/markerclusterer.js?ver=5.1.5'></script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/search/search-map-start-function.js?ver=5.1.5'>
+    <script type='text/javascript' src='{{ asset('js/theme/infobox.js') }}'></script>
+    <script type='text/javascript' src='{{ asset('js/theme/infobox-extend.js') }}'></script>
+    <script type='text/javascript' src='{{ asset('js/theme/markerclusterer.js') }}'></script>
+    <script type='text/javascript' src='{{ asset('js/theme/search-map-start-function.js') }}'>
     </script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/elements.js?ver=5.1.5'></script>
-    <script type='text/javascript'
-        src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/typed.min.js?ver=5.1.5'></script>
+    <script type='text/javascript' src='{{ asset('js/theme/element.js') }}'></script>
+    <script type='text/javascript' src='{{ asset('js/theme/typed.min.js') }}'></script>
     <script type='text/javascript'
         src='https://alquilaclic.com/wp-content/themes/alquilaclic377/js/owl.carousel.min.js?ver=5.1.5'></script>
     <script type='text/javascript'

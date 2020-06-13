@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'adifier';
+  src: url('../fonts/adifier.eot');
+  src: url('../fonts/adifier.eot') format('embedded-opentype'),
+       url('../fonts/adifier.woff2') format('woff2'),
+       url('../fonts/adifier.woff') format('woff'),
+       url('../fonts/adifier.ttf') format('truetype'),
+       url('../fonts/adifier.svg#adifier') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'adifier';
+    src: url('../font/adifier.svg?47509058#adifier') format('svg');
+  }
+}
+*/
+
+ [class^="aficon-"], [class*=" aficon-"]{
+    font-family: 'adifier';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+
+ [class^="aficon-"]:before, [class*=" aficon-"]:before {
+  font-family: "adifier";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aficon-fw {
+  text-align: center;
+  width: 1.25em; }
+
+
+.aficon-spin {
+  -webkit-animation: aficon-spin 2s infinite linear;
+          animation: aficon-spin 2s infinite linear; }
+
+@-webkit-keyframes aficon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes aficon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.aficon-caret-right-0:before { content: '\e800'; } /* 'î €' */
+.aficon-caret-left-o:before { content: '\e801'; } /* 'î ' */
+.aficon-caret-down-o:before { content: '\e802'; } /* 'î ‚' */
+.aficon-caret-up-o:before { content: '\e803'; } /* 'î ƒ' */
+.aficon-heart-o:before { content: '\e804'; } /* 'î „' */
+.aficon-map-marker-alt-o:before { content: '\e805'; } /* 'î …' */
+.aficon-star:before { content: '\e806'; } /* 'î †' */
+.aficon-star-half:before { content: '\e807'; } /* 'î ‡' */
+.aficon-dot-circle-o:before { content: '\e808'; } /* 'î ˆ' */
+.aficon-search:before { content: '\f002'; } /* 'ï€‚' */
+.aficon-heart:before { content: '\f004'; } /* 'ï€„' */
+.aficon-star-o:before { content: '\f005'; } /* 'ï€…' */
+.aficon-th:before { content: '\f00a'; } /* 'ï€Š' */
+.aficon-th-list:before { content: '\f00b'; } /* 'ï€‹' */
+.aficon-times:before { content: '\f00d'; } /* 'ï€' */
+.aficon-redo:before { content: '\f01e'; } /* 'ï€ž' */
+.aficon-list-alt:before { content: '\f022'; } /* 'ï€¢' */
+.aficon-flag:before { content: '\f024'; } /* 'ï€¤' */
+.aficon-print:before { content: '\f02f'; } /* 'ï€¯' */
+.aficon-align-justify:before { content: '\f039'; } /* 'ï€¹' */
+.aficon-edit:before { content: '\f044'; } /* 'ï„' */
+.aficon-play:before { content: '\f04b'; } /* 'ï‹' */
+.aficon-plus-circle:before { content: '\f055'; } /* 'ï•' */
+.aficon-times-circle:before { content: '\f057'; } /* 'ï—' */
+.aficon-check-circle:before { content: '\f058'; } /* 'ï˜' */
+.aficon-question-circle:before { content: '\f059'; } /* 'ï™' */
+.aficon-info-circle:before { content: '\f05a'; } /* 'ïš' */
+.aficon-crosshairs:before { content: '\f05b'; } /* 'ï›' */
+.aficon-share:before { content: '\f064'; } /* 'ï¤' */
+.aficon-eye:before { content: '\f06e'; } /* 'ï®' */
+.aficon-comments:before { content: '\f086'; } /* 'ï‚†' */
+.aficon-star-half-o:before { content: '\f089'; } /* 'ï‚‰' */
+.aficon-thumbtack:before { content: '\f08d'; } /* 'ï‚' */
+.aficon-phone:before { content: '\f095'; } /* 'ï‚•' */
+.aficon-twitter:before { content: '\f099'; } /* 'ï‚™' */
+.aficon-rss:before { content: '\f09e'; } /* 'ï‚ž' */
+.aficon-binoculars:before { content: '\f1e5'; } /* 'ï‡¥' */
+.aficon-bullhorn:before { content: '\f0a1'; } /* 'ï‚¡' */
+.aficon-square:before { content: '\f0c8'; } /* 'ïƒˆ' */
+.aficon-bars:before { content: '\f0c9'; } /* 'ïƒ‰' */
+.aficon-caret-down:before { content: '\f0d7'; } /* 'ïƒ—' */
+.aficon-caret-up:before { content: '\f0d8'; } /* 'ïƒ˜' */
+.aficon-caret-left:before { content: '\f0d9'; } /* 'ïƒ™' */
+.aficon-caret-right:before { content: '\f0da'; } /* 'ïƒš' */
+.aficon-envelope:before { content: '\f0e0'; } /* 'ïƒ ' */
+.aficon-linkedin:before { content: '\f0e1'; } /* 'ïƒ¡' */
+.aficon-undo:before { content: '\f0e2'; } /* 'ïƒ¢' */
+.aficon-cloud-upload:before { content: '\f0ee'; } /* 'ïƒ®' */
+.aficon-angle-left:before { content: '\f104'; } /* 'ï„„' */
+.aficon-angle-right:before { content: '\f105'; } /* 'ï„…' */
+.aficon-angle-up:before { content: '\f106'; } /* 'ï„†' */
+.aficon-angle-down:before { content: '\f107'; } /* 'ï„‡' */
+.aficon-circle:before { content: '\f111'; } /* 'ï„‘' */
+.aficon-unlock-alt:before { content: '\f13e'; } /* 'ï„¾' */
+.aficon-check-square:before { content: '\f14a'; } /* 'ï…Š' */
+.aficon-dollar-sign:before { content: '\f155'; } /* 'ï…•' */
+.aficon-youtube:before { content: '\f167'; } /* 'ï…§' */
+.aficon-instagram:before { content: '\f16d'; } /* 'ï…­' */
+.aficon-tumblr:before { content: '\f173'; } /* 'ï…³' */
+.aficon-vk:before { content: '\f189'; } /* 'ï†‰' */
+.aficon-dot-circle:before { content: '\f192'; } /* 'ï†’' */
+.aficon-google:before { content: '\f1a0'; } /* 'ï† ' */
+.aficon-stumbleupon:before { content: '\f1a4'; } /* 'ï†¤' */
+.aficon-digg:before { content: '\f1a6'; } /* 'ï†¦' */
+.aficon-circle-notch:before { content: '\f1ce'; } /* 'ï‡Ž' */
+.aficon-paper-plane:before { content: '\f1d8'; } /* 'ï‡˜' */
+.aficon-share-alt:before { content: '\f1e0'; } /* 'ï‡ ' */
+.aficon-pinterest:before { content: '\f231'; } /* 'ïˆ±' */
+.aficon-whatsapp:before { content: '\f232'; } /* 'ïˆ²' */
+.aficon-clone:before { content: '\f24d'; } /* 'ï‰' */
+.aficon-reddit:before { content: '\f281'; } /* 'ïŠ' */
+.aficon-trash-alt:before { content: '\f2ed'; } /* 'ï‹­' */
+.aficon-stopwatch:before { content: '\f2f2'; } /* 'ï‹²' */
+.aficon-sign-out-alt:before { content: '\f2f5'; } /* 'ï‹µ' */
+.aficon-pen:before { content: '\f304'; } /* 'ïŒ„' */
+.aficon-pen-alt:before { content: '\f305'; } /* 'ïŒ…' */
+.aficon-long-arrow-alt-left:before { content: '\f30a'; } /* 'ïŒŠ' */
+.aficon-long-arrow-alt-right:before { content: '\f30b'; } /* 'ïŒ‹' */
+.aficon-lock-alt:before { content: '\f30d'; } /* 'ïŒ' */
+.aficon-arrow-alt-up:before { content: '\f357'; } /* 'ï—' */
+.aficon-repeat:before { content: '\f363'; } /* 'ï£' */
+.aficon-alarm-clock:before { content: '\f34e'; } /* 'ïŽ' */
+.aficon-facebook:before { content: '\f39e'; } /* 'ïŽž' */
+.aficon-map-marker-alt:before { content: '\f3c5'; } /* 'ï…' */
+.aficon-reply:before { content: '\f3e5'; } /* 'ï¥' */
+.aficon-tachometer-alt:before { content: '\f3fd'; } /* 'ï½' */
+.aficon-user-alt:before { content: '\f406'; } /* 'ï†' */
+.aficon-power-off:before { content: '\f011'; } /* 'ï€‘' */
+.aficon-cog:before { content: '\f013'; } /* 'ï€“' */
+.aficon-times-octagon:before { content: '\f2f0'; } /* 'ï‹°' */
+.aficon-long-arrow-alt-right-1:before { content: '\e809'; } /* 'î ‰' */
+.aficon-long-arrow-alt-left-1:before { content: '\e80a'; } /* 'î Š' */
+.aficon-th-large:before { content: '\e80b'; } /* 'î ‹' */
+.aficon-ion-android-menu:before { content: '\f394'; } /* 'ïŽ”' */
+.aficon-add-ad:before { content: '\f120'; } /* 'ï„ ' */
+.aficon-ad-contact:before { content: '\f40e'; } /* 'ïŽ' */
+.aficon-login:before { content: '\f415'; } /* 'ï•' */
+.aficon-user:before { content: '\f416'; } /* 'ï–' */
+.aficon-logout:before { content: '\f417'; } /* 'ï—' */
+.aficon-messages:before { content: '\f418'; } /* 'ï˜' */
+.aficon-home:before { content: '\f015'; } /* 'ï€•' */
+.aficon-calendar-alt:before { content: '\f073'; } /* 'ï³' */

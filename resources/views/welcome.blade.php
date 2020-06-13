@@ -385,7 +385,7 @@
 
         .page-title {
             background-color: #2a2f36;
-            background-image: url();
+            background-image: url(http://localhost:8000/img/Imag%C3%A9n%20Banner%20Alquilaclic.png);
         }
 
         .page-title,
@@ -400,14 +400,14 @@
         }
 
         .bottom-sidebar-wrap {
-            background: #374252;
+            background: #f92935;
         }
 
         .bottom-sidebar-wrap,
         .bottom-sidebar-wrap a,
         .bottom-sidebar-wrap a:hover,
         .bottom-sidebar-wrap a:focus {
-            color: #959ba7;
+            color: white;
         }
 
         .bottom-sidebar-wrap .widget .white-block-title h5,
@@ -460,14 +460,14 @@
         }
 
         .copyrights {
-            background: #2d323e;
+            background: white;
         }
 
         .copyrights div,
         .copyrights a,
         .copyrights a:hover,
         .copyrights a:focus {
-            color: #aaaaaa;
+            color: white;
         }
 
         .copyrights a:hover {
@@ -480,7 +480,7 @@
 
         .subscription-footer,
         .subscription-footer h4 {
-            color: #2d323e
+            color: white
         }
 
         .subscription-footer .submit-ajax-form,
@@ -681,7 +681,7 @@
 
         body.kc-css-system .kc-css-126101 {
             font-weight: 800;
-            background: transparent url(https://alquilaclic.com/wp-content/uploads/2019/01/slide1-1024x487.jpg) 50%/cover repeat scroll;
+            background: transparent url(http://localhost:8000/img/Imag%C3%A9n%20Banner%20Alquilaclic.png) 50%/cover repeat scroll;
             margin-top: -100px;
             padding-top: 150px;
             padding-bottom: 200px;
@@ -1252,10 +1252,8 @@
         <div class="kc_clfw"></div>
         <section class="kc-elm kc-css-126101 kc-animated kc-animate-eff-fadeInLeft kc_row row-slider-section">
             <div class="row-slider" data-unique="rs_5ed32c44bfa6d"><img width="1280" height="609"
-                    src="https://alquilaclic.com/wp-content/uploads/2018/11/slide1.jpg"
-                    class="attachment-full size-full" alt=""
-                    srcset="https://alquilaclic.com/wp-content/uploads/2018/11/slide1.jpg 1280w, https://alquilaclic.com/wp-content/uploads/2018/11/slide1-300x143.jpg 300w, https://alquilaclic.com/wp-content/uploads/2018/11/slide1-768x366.jpg 768w, https://alquilaclic.com/wp-content/uploads/2018/11/slide1-1024x487.jpg 1024w, https://alquilaclic.com/wp-content/uploads/2018/11/slide1-750x357.jpg 750w"
-                    sizes="(max-width: 1280px) 100vw, 1280px" /></div>
+                    src="{{ asset('img/Imagén Banner Alquilaclic.png') }}" class="attachment-full size-full" alt="" />
+            </div>
             <div class="kc-row-container  kc-container">
                 <div class="kc-wrap-columns">
                     <div class="kc-elm kc-css-370072 kc_col-sm-1 kc_column kc_col-sm-1">

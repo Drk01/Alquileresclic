@@ -441,14 +441,14 @@
         }
 
         .bottom-sidebar-wrap {
-            background: #374252;
+            background: #f92935;
         }
 
         .bottom-sidebar-wrap,
         .bottom-sidebar-wrap a,
         .bottom-sidebar-wrap a:hover,
         .bottom-sidebar-wrap a:focus {
-            color: #959ba7;
+            color: white;
         }
 
         .bottom-sidebar-wrap .widget .white-block-title h5,
@@ -501,7 +501,7 @@
         }
 
         .copyrights {
-            background: #2d323e;
+            background: white;
         }
 
         .copyrights div,

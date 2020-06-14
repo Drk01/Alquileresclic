@@ -89,8 +89,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-white-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="{{ asset('img/alquilaclic-logo.png') }}" class="brand-image img-circle" />
-                <span class="brand-text font-weight-light">Alquilaclic</span>
+                <img src="{{ asset('img/Logo-AlquilaClicbbb.png') }}" class="brand-image" />
+                <span class="brand-text font-weight-light">AL</span>
             </a>
 
             @include('panel.layouts.sidebar')

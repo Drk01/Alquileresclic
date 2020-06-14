@@ -71,3 +71,9 @@ Route::group(['prefix' => 'google'], function () {
 
     Route::get('sign-in/redirect', 'GoogleController@handleProviderCallback')->name('googleHandleProviderCallback');
 });
+
+Route::get('create-storage-link', function () {
+    Artisan::call('storage:link');
+
+    return 'done';
+});

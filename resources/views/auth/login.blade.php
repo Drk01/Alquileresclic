@@ -76,7 +76,7 @@
                                 <label for="password">Contraseña: </label>
                             </div>
                             <div class="col-8">
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="password" name="password" id="password" class="form-control">
                             </div>
                         </div>
                         <div class="row">
@@ -84,7 +84,7 @@
                                 <label for="password_confirmation">Confirmación de contraseña: </label>
                             </div>
                             <div class="col-8">
-                                <input type="text" name="password_confirmation" id="password_confirmation"
+                                <input type="password" name="password_confirmation" id="password_confirmation"
                                     class="form-control">
                             </div>
                         </div>

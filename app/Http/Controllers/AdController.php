@@ -75,7 +75,7 @@ class AdController extends Controller
             }
 
             $anuncio->code = Str::random(3) . rand(0, 999);
-            $anuncio->slug = 'alquiler-de-' . Str::slug($request->title, '-').$anuncio->code;
+            $anuncio->slug = 'alquiler-de-' . Str::slug($request->title, '-') . '-' . $anuncio->code;
             $anuncio->profile_id = $usuario->profile()->first()->id;
             $anuncio->save();
 

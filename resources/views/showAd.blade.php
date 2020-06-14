@@ -697,110 +697,111 @@
                         </div>
                     </div>
                     <div class="single-advert-media">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        {{-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 @foreach ($anuncio->images as $image)
                                 <div class="carousel-item">
                                     <img src="{{ asset('storage/'.$image->image_link) }}" class="d-block w-100"
-                                        alt="Imágen del anuncio">
-                                </div>
-                                @endforeach
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+                        alt="Imágen del anuncio">
                     </div>
-                    <div class="hide-price-big">
-
-                        <div class="single-price-wrap">
-                            <div class="white-block single-price">
-                                <i class="aficon-dollar-sign"></i>
-                                <div class="white-block-content">
-                                    <div class="price"><span class="price-symbol">$</span>{{ $anuncio->cost }}<span
-                                            class="no-strike">/ {{$anuncio->currency}}</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="white-block">
-                        <div class="white-block-content">
-                            <h1 class="blog-item-title h4-size">{{ $anuncio->title }}</h1>
-                            <div class="post-content clearfix">
-                                <p>{{ $anuncio->description }}</p>
-                            </div>
-                            <ul class="list-inline list-unstyled single-meta top-advert-meta">
-                                <li>
-                                    <i class="aficon-info-circle"></i>
-                                    {{ $anuncio->profile->type }} </li>
-                                <li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="hide-print small-screen-last">
-                    </div>
-
+                    @endforeach
                 </div>
-                <div class="col-sm-4">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> --}}
+
+            <img src="{{ asset('storage/'.$anuncio->images->first()->image_link) }}" class="d-block w-100"
+                alt="Imágen del anuncio">
+        </div>
+        <div class="hide-price-big">
+
+            <div class="single-price-wrap">
+                <div class="white-block single-price">
+                    <i class="aficon-dollar-sign"></i>
+                    <div class="white-block-content">
+                        <div class="price"><span class="price-symbol">$</span>{{ $anuncio->cost }}<span
+                                class="no-strike">/ {{$anuncio->currency}}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-                    <div class="single-price-wrap">
-                        <div class="white-block single-price">
-                            <i class="aficon-dollar-sign"></i>
-                            <div class="white-block-content">
-                                <div class="price"><span class="price-symbol">$</span>{{ $anuncio->cost }}
-                                    {{ $anuncio->currency }}<span class="no-strike">/
-                                        {{ $anuncio->period }}
-                                    </span></div>
+        <div class="white-block">
+            <div class="white-block-content">
+                <h1 class="blog-item-title h4-size">{{ $anuncio->title }}</h1>
+                <div class="post-content clearfix">
+                    <p>{{ $anuncio->description }}</p>
+                </div>
+                <ul class="list-inline list-unstyled single-meta top-advert-meta">
+                    <li>
+                        <i class="aficon-info-circle"></i>
+                        {{ $anuncio->profile->type }} </li>
+                    <li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hide-print small-screen-last">
+        </div>
+
+        </div>
+        <div class="col-sm-4">
+
+
+            <div class="single-price-wrap">
+                <div class="white-block single-price">
+                    <i class="aficon-dollar-sign"></i>
+                    <div class="white-block-content">
+                        <div class="price"><span class="price-symbol">$</span>{{ $anuncio->cost }}
+                            {{ $anuncio->currency }}<span class="no-strike">/
+                                {{ $anuncio->period }}
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="white-block contact-scroll-details">
+                <div class="white-block-title">
+                    <h5>Información del Alquilador</h5>
+                </div>
+                <div class="white-block-content">
+                    <div class="seller-details flex-wrap flex-start-h">
+                        <a href="https://alquilaclic.com/inmob/alexm/" class="avatar-wrap">
+                            <img alt=''
+                                src='https://secure.gravatar.com/avatar/52af64918cee1b540e665bfb00d6e3b3?s=70&#038;d=mm&#038;r=g'
+                                srcset='https://secure.gravatar.com/avatar/52af64918cee1b540e665bfb00d6e3b3?s=140&#038;d=mm&#038;r=g 2x'
+                                class='avatar avatar-70 photo' height='70' width='70' /> </a>
+
+                        <div class="seller-name">
+                            <h5>
+                                <a href="https://alquilaclic.com/inmob/alexm/">
+                                    {{ $anuncio->profile->first()->user->email }} </a>
+                            </h5>
+                            <div class="user-rating">
+                                <span class="aficon-star-o"></span><span class="aficon-star-o"></span><span
+                                    class="aficon-star-o"></span><span class="aficon-star-o"></span><span
+                                    class="aficon-star-o"></span> </div>
+                            <div class="online-status offline flex-wrap flex-start-h"><span></span>Desconectado
                             </div>
                         </div>
                     </div>
 
-
-
-                    <div class="white-block contact-scroll-details">
-                        <div class="white-block-title">
-                            <h5>Información del Alquilador</h5>
-                        </div>
-                        <div class="white-block-content">
-                            <div class="seller-details flex-wrap flex-start-h">
-                                <a href="https://alquilaclic.com/inmob/alexm/" class="avatar-wrap">
-                                    <img alt=''
-                                        src='https://secure.gravatar.com/avatar/52af64918cee1b540e665bfb00d6e3b3?s=70&#038;d=mm&#038;r=g'
-                                        srcset='https://secure.gravatar.com/avatar/52af64918cee1b540e665bfb00d6e3b3?s=140&#038;d=mm&#038;r=g 2x'
-                                        class='avatar avatar-70 photo' height='70' width='70' /> </a>
-
-                                <div class="seller-name">
-                                    <h5>
-                                        <a href="https://alquilaclic.com/inmob/alexm/">
-                                            {{ $anuncio->profile->first()->user->email }} </a>
-                                    </h5>
-                                    <div class="user-rating">
-                                        <span class="aficon-star-o"></span><span class="aficon-star-o"></span><span
-                                            class="aficon-star-o"></span><span class="aficon-star-o"></span><span
-                                            class="aficon-star-o"></span> </div>
-                                    <div class="online-status offline flex-wrap flex-start-h"><span></span>Desconectado
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a href="javascript:void(0);" class="reveal-phone flex-wrap flex-start-h" data-last="999">
-                                <i class="aficon-phone"></i>
-                                <span class="flex-right">
-                                    <em>{{ $anuncio->profile->user->phone }}</em>
-                                </span>
-                            </a>
-                            {{--
+                    <a href="javascript:void(0);" class="reveal-phone flex-wrap flex-start-h" data-last="999">
+                        <i class="aficon-phone"></i>
+                        <span class="flex-right">
+                            <em>{{ $anuncio->profile->user->phone }}</em>
+                        </span>
+                    </a>
+                    {{--
                             <a href="#" class="contact-seller flex-wrap flex-start-h hide-print" data-toggle="modal"
                                 data-target="#contact-seller" data-advert-id="2216">
                                 <i class="aficon-envelope"></i>
@@ -809,11 +810,11 @@
                                     <span class="description">Pregunta sobre este alquiler</span>
                                 </span>
                             </a> --}}
-                        </div>
-                    </div>
+                </div>
+            </div>
 
 
-                    {{-- <div class="white-block hide-print">
+            {{-- <div class="white-block hide-print">
                         <div class="white-block-title">
                             <h5>Añadir Acción</h5>
                         </div>
@@ -853,8 +854,8 @@
                                 alt="directions">
                         </a>
                     </div> --}}
-                </div>
-            </div>
+        </div>
+        </div>
         </div>
     </main>
 </body>

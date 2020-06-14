@@ -1657,8 +1657,8 @@
                             <div class="kc-elm kc-css-248280" style="height: 25px; clear: both; width:100%;"></div>
                             <div class="hiw-wrapper hiw-wrapper-3 flex-wrap flex-start-v">
                                 <div class="hiw-item service hiw-1590897732">
-                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><i
-                                            class="fas fa-user"></i></div>
+                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><img
+                                            src="{{asset('img/Icono-12.png')}}" alt=""></div>
                                     <div class="service-content">
                                         <h5>Crea una cuenta</h5>
                                         <p>Crear una cuenta es muy fácil y lo puedes hacer con tu red social</p>
@@ -1673,8 +1673,8 @@
                                     </div>
                                 </div>
                                 <div class="hiw-item service hiw-1590897732">
-                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><i
-                                            class="far fa-bell"></i></div>
+                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><img
+                                            src="{{ asset('img/Icono-13.png') }}" alt=""></div>
                                     <div class="service-content">
                                         <h5>Crea Tu Anuncio Gratis </h5>
                                         <p>Puedes Publicar anuncios totalmente gratis por tiempo ilimitado</p>
@@ -1689,8 +1689,8 @@
                                     </div>
                                 </div>
                                 <div class="hiw-item service hiw-1590897732">
-                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><i
-                                            class="fas fa-gem"></i>
+                                    <div class="service-icon animation" style="background: #f92935; color: #ffffff"><img
+                                            src="{{ asset('img/Icono-14.png') }}" alt="">
                                     </div>
                                     <div class="service-content">
                                         <h5>AlquilaCLIC</h5>

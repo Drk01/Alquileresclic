@@ -125,7 +125,7 @@
                             <input type="checkbox" name="remember" id="remember" class="form-check-input">
                             <label for="remember" class="form-check-label">Recuérdame</label>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row" hidden>
                             <div class="col offset-2">
                                 <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_SITE_KEY') }}"></div>
                                 @if ($errors->has('g-recaptcha-response'))

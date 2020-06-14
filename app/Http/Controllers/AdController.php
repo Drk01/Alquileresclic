@@ -79,6 +79,7 @@ class AdController extends Controller
             $anuncio->slug = 'alquiler-de-' . Str::slug($request->title, '-') . '-' . $anuncio->code;
             $anuncio->profile_id = $usuario->profile()->first()->id;
             $anuncio->save();
+            $anuncio->categories()->attach($request->category);
 
             // Salvar las imágenes del anuncio.
 

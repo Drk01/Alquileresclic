@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->boolean('confianza')->default(false);
             $table->boolean('block')->default(false);
             $table->string('api_token')->default(Str::random(60));
+            $table->integer('indicative');
             $table->string('phone');
             $table->timestamps();
         });

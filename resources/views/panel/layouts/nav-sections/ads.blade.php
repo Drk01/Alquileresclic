@@ -40,6 +40,17 @@
             </a>
         </li>
         @endif
+        @if (auth()->user()->role == 1)
+        <li class="nav-item">
+            <a href="{{ route('getAllAds') }}" @if (\Request::route()->getName()== 'getAllAds') class=" nav-link active"
+                @else
+                class="nav-link"
+                @endif>
+                <i class="far fa-circle nav-icon"></i>
+                <p>Ver todos los anuncios</p>
+            </a>
+        </li>
+        @endif
         <li class="nav-item">
             <a href="{{ route('getMyFavorites') }}" @if (\Request::route()->getName()== 'getMyFavorites') class="
                 nav-link

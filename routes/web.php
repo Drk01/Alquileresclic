@@ -38,6 +38,9 @@ Route::group(['prefix' => 'panel'], function () {
 
         //Ruta para ver anuncios favoritos.
         Route::get('/favorites', 'AdController@getMyFavorites')->name('getMyFavorites');
+
+        // Ruta para mostrar todos los anuncios.
+        Route::get('/all', 'AdController@getAllAds')->name('getAllAds');
     });
 
     Route::group(['prefix' => 'categories'], function () {

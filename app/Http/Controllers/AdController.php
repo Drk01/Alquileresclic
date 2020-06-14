@@ -19,6 +19,7 @@ class AdController extends Controller
         $this->middleware('auth')->except('rejectAd', 'acceptAd', 'saveAdChanges');
         $this->middleware('hasCreatedProfile')->except('getAdsForm', 'rejectAd', 'acceptAd', 'saveAdChanges');
         $this->middleware('isAdmin&SuperToken')->only('rejectAd', 'acceptAd');
+        $this->middleware('isAdmin')->only('getAllAds');
     }
 
     public function getAdsForm()
@@ -138,5 +139,12 @@ class AdController extends Controller
     {
         $favorites = Favorite::where('user_id', auth()->user()->id)->get();
         return view('panel.ads.showMyFavorites', compact('favorites'));
+    }
+
+    public function getAllAds()
+    {
+        $ads = Ad::all();
+
+        return view('panel.ads.myAds', compact('ads'));
     }
 }

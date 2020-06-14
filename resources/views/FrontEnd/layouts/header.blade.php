@@ -19,7 +19,7 @@
                         <a title="Home" href="{{ route('index') }}">Home</a></li>
                     <li id="menu-item-1600"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1600 dropdown ">
-                        <a title="Categorías" href="https://alquilaclic.com/anuncios/" data-toggle="dropdown"
+                        <a title="Categorías" href="#" data-toggle="dropdown"
                             class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Categorías <i
                                 class="fas fa-angle-down"></i></a>
                         <ul role="menu" class=" dropdown-menu">

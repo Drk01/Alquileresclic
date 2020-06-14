@@ -20,8 +20,14 @@
         </div>
         <div class="form-group">
             <label for="phone">Teléfono: </label>
-            <input required type="text" name="phone" id="phone" class="form-control"
-                value="{{ auth()->user()->phone }}" />
+            <div class="row">
+                <div class="col-2"><input type="text" value="{{ auth()->user()->indicative }}" class="form-control">
+                </div>
+                <div class="col">
+                    <input required type="text" name="phone" id="phone" class="form-control"
+                        value="{{ auth()->user()->phone }}" />
+                </div>
+            </div>
         </div>
     </div>
 

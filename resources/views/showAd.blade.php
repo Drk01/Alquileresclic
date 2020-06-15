@@ -783,8 +783,7 @@
 
                         <div class="seller-name">
                             <h5>
-                                <a href="https://alquilaclic.com/inmob/alexm/">
-                                    {{ $anuncio->profile->first()->user->email }} </a>
+                                {{ $anuncio->profile->user->email }}
                             </h5>
                             <div class="user-rating">
                                 <span class="aficon-star-o"></span><span class="aficon-star-o"></span><span

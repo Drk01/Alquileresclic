@@ -59,7 +59,7 @@ class CategoriesController extends Controller
     {
         $ads = Ad::whereHas('categories', function ($register) use ($id) {
             $register->where('category_id', $id)->where('status', 'Aprobado');
-        });
+        })->get();
 
         return view('FrontEnd.showByCategory', compact('ads'));
     }

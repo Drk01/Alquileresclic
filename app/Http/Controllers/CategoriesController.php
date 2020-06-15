@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Ad;
 use App\Category;
 use Illuminate\Http\Request;
 
@@ -9,8 +10,8 @@ class CategoriesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('saveEditedCategory', 'deleteCategory', 'getMainCategories', 'getSecondaryCategories');
-        $this->middleware('isAdmin')->except('saveEditedCategory', 'deleteCategory', 'getMainCategories', 'getSecondaryCategories');
+        $this->middleware('auth')->except('saveEditedCategory', 'deleteCategory', 'getMainCategories', 'getSecondaryCategories', 'getAdsByCategory');
+        $this->middleware('isAdmin')->except('saveEditedCategory', 'deleteCategory', 'getMainCategories', 'getSecondaryCategories', 'getAdsByCategory');
         $this->middleware('isAdminToken')->only('saveEditedCategory', 'deleteCategory');
     }
 
@@ -52,5 +53,14 @@ class CategoriesController extends Controller
     public function getSecondaryCategories($id)
     {
         return Category::where('parent_id', $id)->get();
+    }
+
+    public function getAdsByCategory($category, $id)
+    {
+        $ads = Ad::whereHas('categories', function ($register) use ($id) {
+            $register->where('category_id', $id)->where('status', 'Aprobado');
+        });
+
+        return view('FrontEnd.showByCategory', compact('ads'));
     }
 }

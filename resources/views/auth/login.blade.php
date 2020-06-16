@@ -68,7 +68,8 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-3">
-                                        <input type="text" class="form-control" name="indicative" id="indicative">
+                                        <input type="text" class="form-control" name="indicative" id="indicative"
+                                            placeholder="57">
                                     </div>
                                     <div class="col">
                                         <input type="text" name="phone" id="phone" class="form-control">

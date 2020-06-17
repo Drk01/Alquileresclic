@@ -15,6 +15,8 @@
         padding: 0 !important;
     }
 </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel='stylesheet' id='wp-block-library-css'
     href='https://alquilaclic.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1.5' type='text/css'
     media='all' />
@@ -625,6 +627,7 @@
         }
     }
 </style>
+
 <link rel='stylesheet' id='kc-general-css'
     href='https://alquilaclic.com/wp-content/plugins/kingcomposer/assets/frontend/css/kingcomposer.min.css?ver=2.8.2'
     type='text/css' media='all' />
@@ -680,8 +683,7 @@
         width: 99.66666667%;
     }
 </style>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 
 <body data-rsssl=1 class="advert-template-default single single-advert postid-2216 logged-in kc-css-system">
     <main>

@@ -81,3 +81,5 @@ Route::get('create-storage-link', function () {
 Route::group(['prefix' => 'categorias'], function () {
     Route::get('alquiler-de-{category}-{id}', 'CategoriesController@getAdsByCategory')->name('getAdsByCategory');
 });
+
+Route::view('terminos', 'terminosYcondiciones');

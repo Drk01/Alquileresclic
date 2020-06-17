@@ -82,4 +82,4 @@ Route::group(['prefix' => 'categorias'], function () {
     Route::get('alquiler-de-{category}-{id}', 'CategoriesController@getAdsByCategory')->name('getAdsByCategory');
 });
 
-Route::view('terminos', 'terminosYcondiciones');
+Route::view('terminos', 'terminosYcondiciones')->name('terminos');

@@ -111,8 +111,9 @@
                             <div class="row form-check">
                                 <input type="checkbox" name="terms&condition" id="terms&condition"
                                     class="form-check-input">
-                                <label class="form-check-label" for="terms&condition">Acepto términos y condiciones de
-                                    uso.
+                                <label class="form-check-label" for="terms&condition">Acepto <a
+                                        href="{{ route('terminos') }}">términos y condiciones de
+                                        uso</a>.
                                 </label>
                             </div>
                         </div>

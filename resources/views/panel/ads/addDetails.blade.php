@@ -69,7 +69,7 @@
                     <div class="form-check mt-3">
                         <input class="form-check-input" type="checkbox" id="termsYconditions" name="termsYconditions">
                         <label class="form-check-label" for="termsYconditions">
-                            Acepto términos y condiciones de uso
+                            Acepto <a href="{{ route('terminos') }}">términos y condiciones de uso</a>
                         </label>
                     </div>
                     <button type="submit" id="btn-publicar" disabled class="btn btn-success btn-lg float-right mt-3">

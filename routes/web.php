@@ -83,3 +83,5 @@ Route::group(['prefix' => 'categorias'], function () {
 });
 
 Route::view('terminos', 'terminosYcondiciones')->name('terminos');
+
+Route::post('search', 'SearchController@search')->name('searchAd');

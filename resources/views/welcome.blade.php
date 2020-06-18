@@ -32,8 +32,9 @@
                             <div class="kc-elm kc-css-673405" style="height: 35px; clear: both; width:100%;"></div>
                             <div class="kc-search ">
 
-                                <form action="https://alquilaclic.com/mostrar-anuncios/"
-                                    class="header-search flex-wrap">
+                                <form action="{{ route('searchAd') }}" class="header-search flex-wrap" id="searchForm"
+                                    method="POST">
+                                    @csrf
                                     <div class="keyword-wrap">
                                         <input type="text" class="form-control" name="keyword"
                                             placeholder="Busca código o palabra...">
@@ -55,7 +56,8 @@
                                             @endforeach
 
                                         </select>
-                                    </div> <a href="javascript:void(0);" class="af-button submit-form">Buscar </a>
+                                    </div> <a class="af-button submit-form" onclick="$('#searchForm').submit()"
+                                        style="cursor: pointer">Buscar </a>
                                 </form>
 
                             </div>
